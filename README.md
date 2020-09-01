@@ -11,7 +11,7 @@
 
 - 🤝 I’m looking for help with **Go Language :D**
 
-- 👨‍💻 All of my projects are available at [mertkaya.me](mertkaya.me)
+- 👨‍💻 My Website is  [mertkaya.me](mertkaya.me)
 
 - 💬 Ask me about **Java,Python,Sklearn**
 
