@@ -3,13 +3,13 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=mertkaya13" alt="mertkaya13" /> </p>
 
-- 🔭 I’m currently working on [BiSoft](https://www.bisoft.com.tr/)
+- 🔭 I’m currently open to work.
 
-- 🌱 I’m currently learning **JavaScript - Cypher - GraphicDb**
+- 🌱 I’m currently learning **Flutter and Unity**
 
 - 👯 I’m looking to collaborate on **ML and CV Projects**
 
-- 🤝 I’m looking for help with **JS :D**
+- 🤝 I’m looking for help with **Unity**
 
 - 👨‍💻 My Website is  [mertkaya.me](mertkaya.me)
 
