@@ -5,11 +5,11 @@
 
 - 🔭 I’m currently open to work.
 
-- 🌱 I’m currently learning **Flutter and Unity**
+- 🌱 I’m currently learning **PHP and Flutter**
 
 - 👯 I’m looking to collaborate on **ML and CV Projects**
 
-- 🤝 I’m looking for help with **Unity**
+- 🤝 I’m looking for help with **PHP**
 
 - 👨‍💻 My Website is  [mertkaya.me](mertkaya.me)
 
