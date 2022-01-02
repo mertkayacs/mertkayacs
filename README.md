@@ -13,7 +13,7 @@
 
 - 🤝 I’m looking for help with **Go , Flutter**
 
-- 👨‍💻 All of my projects are available at here but check my website too. [www.mertkayacs.com](www.mertkayacs.com)
+- 👨‍💻 All of my projects are available at here but check my website too. [http://mertkayacs.com](http://mertkayacs.com)
 
 - 📝 I regularly write articles on [https://medium.com/@mertkayacs](https://medium.com/@mertkayacs)
 
