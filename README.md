@@ -28,7 +28,7 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/mertkayaturkey" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="mertkayaturkey" height="30" width="40" /></a>
-<a href="https://stackoverflow.com/users/user:17735888" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="user:17735888" height="30" width="40" /></a>
+<a href="https://stackoverflow.com/users/17735888/mertkayacs" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="user:17735888" height="30" width="40" /></a>
 <a href="https://kaggle.com/mertilovski" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="mertilovski" height="30" width="40" /></a>
 <a href="https://medium.com/@mertkayacs" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@mertkayacs" height="30" width="40" /></a>
 <a href="https://www.hackerrank.com/mertilovski" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="mertilovski" height="30" width="40" /></a>
