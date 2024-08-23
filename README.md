@@ -17,7 +17,7 @@
 
 - 📝 I regularly write articles on [https://medium.com/@mertkayacs](https://medium.com/@mertkayacs)
 
-- 💬 Ask me about **Python, Java, ML**
+- 💬 Ask me about **Python, Java, ML , DL , GenAI **
 
 - 📫 How to reach me **mertkayacs@gmail.com**
 
