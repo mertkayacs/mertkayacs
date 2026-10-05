@@ -2,7 +2,7 @@
 
 # Mert Kaya
 
-Senior AI researcher and AI architect, founder of [Eschatia Labs](https://eschatialabs.com), AI Engineer at Enocta.
+Senior AI researcher and AI architect, founder of [Eschatia Labs](https://eschatialabs.com), AI Engineer at Enocta. MSc in Computer Science from TED University, BSc in Computer Science from TOBB ETÜ.
 
 I build small open models and tools that run on your own machine. The deepfake detectors show where they look, and the decision models say how sure they are.
 
