@@ -4,7 +4,7 @@
 
 Senior AI researcher and AI architect, founder of [Eschatia Labs](https://eschatialabs.com), AI Engineer at Enocta. MSc in Computer Science from TED University, BSc in Computer Science from TOBB ETÜ.
 
-I build small open models and tools that run on your own machine. The deepfake detectors show where they look, and the decision models say how sure they are.
+I build the open models that will help humanity. Also working on explainable AI deepfake detectors that show where they look, and decision models say how sure they are.
 
 [mertkayacs.com](https://mertkayacs.com)&emsp;[eschatialabs.com](https://eschatialabs.com)&emsp;[Hugging&nbsp;Face](https://huggingface.co/mertkayacs)&emsp;[Kaggle](https://www.kaggle.com/mertilovski)&emsp;[LinkedIn](https://www.linkedin.com/in/mertkayacs)
 
