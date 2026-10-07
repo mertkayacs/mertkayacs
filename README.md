@@ -1,3 +1,5 @@
+<a href="https://eschatialabs.com"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/eschatia-labs-banner.png"><img src="assets/eschatia-labs-banner.gif" width="100%" alt="Eschatia Labs: open models, papers and software from the edge of what we know"></picture></a>
+
 # Mert Kaya
 
 Senior AI researcher and AI architect. I build small AI models and tools for decisions whose confidence and evidence people can inspect. I founded [Eschatia Labs](https://eschatialabs.com), an international open-source research lab, and work as an AI Engineer at Enocta.
