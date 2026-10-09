@@ -12,8 +12,9 @@ Senior AI researcher and AI architect. I build small AI models and tools for dec
 - **[JevOss](https://github.com/mertkayacs/jevoss)**: test a decision model's accuracy, confidence and response to hidden instructions. [Test methods](https://jevoss.mertkayacs.com).
 - **[xdfdet](https://github.com/mertkayacs/xdfdet)**: eight deepfake video detectors with heatmaps showing the face regions behind a prediction, from my MSc thesis. [Study and demos](https://xdfdet.mertkayacs.com).
 
-## Tools for local AI
+## Tools for AI coding and local AI
 
+- **[Ultra Mod](https://github.com/mertkayacs/ultramod)**: an all-in-one mod pack for Claude Code. Usage limits and context above the prompt, a guard with undo for `rm -rf` and `git reset --hard`, `.env` files kept away from the model, and a receipt under every answer. Install with `npx ultramod`. [Site and demos](https://ultramod.mertkayacs.com).
 - **[Tholos](https://github.com/mertkayacs/tholos)**: AI assistants that share tables, notes and tasks on your computer, with rules that allow, ask about or deny actions. Tholos-2B passed 137 of 160 Tholos-Bench scenarios against MiniCPM5-2B's 112 on a Kaggle T4 with llama.cpp and JSON schema decoding. [Model and benchmark](https://huggingface.co/mertkayacs/Tholos-2B).
 - **[reevesagents](https://github.com/mertkayacs/reevesagents)**: run AI coding tools side by side in a terminal workspace, or let one direct the others. [Demo and docs](https://reevesagents.mertkayacs.com).
 
