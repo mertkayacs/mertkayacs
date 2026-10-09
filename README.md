@@ -10,6 +10,7 @@ Senior AI researcher and AI architect. I build small AI models and tools for dec
 
 - **[JevAlt](https://github.com/mertkayacs/jevalt)**: small language models for choosing between options in English, Turkish and German, with a probability for each answer. Karar-4B is one of the best open Turkish decision models at 4B parameters: 96.8% accuracy on held-out Turkish decisions against Kev-4B's 87.1%. The tests come from JevAlt's own data pipeline. [Try the models](https://huggingface.co/spaces/mertkayacs/JevAlt).
 - **[JevOss](https://github.com/mertkayacs/jevoss)**: test a decision model's accuracy, confidence and response to hidden instructions. [Test methods](https://jevoss.mertkayacs.com).
+- **[Open benchmarks](https://eschatialabs.com/benchmarks/)**: [jevalt-bench](https://huggingface.co/datasets/mertkayacs/jevalt-bench) has 3,116 written situations in English, Turkish and German for decision models, and [Tholos-Bench](https://huggingface.co/datasets/mertkayacs/tholos-bench) has 160 workspace tasks for small AI assistants. Both are free to download and run against your own model.
 - **[xdfdet](https://github.com/mertkayacs/xdfdet)**: eight deepfake video detectors with heatmaps showing the face regions behind a prediction, from my MSc thesis. [Study and demos](https://xdfdet.mertkayacs.com).
 
 ## Tools for AI coding and local AI
@@ -24,5 +25,6 @@ MSc Computer Science, TED University. BSc Computer Engineering, TOBB University 
 
 - M. Kaya, V. Adanova. *Augmentation and Cutout in Deepfake Detection: A Comparative Study of Accuracy, Calibration, and Attention.* UBMK 2026. Accepted, to appear in IEEE Xplore.
 - M. Kaya. *Explainable deepfake detection using frame level CNN models: A comparative study of augmentation and cutout techniques.* MSc thesis, TED University, 2025. Advisor: V. Adanova. [Read the thesis](https://doi.org/10.5281/zenodo.18998566).
+- M. Kaya. *Language Preservation Using Agentic AI Architectures: A Tool-Grounded Small Language Model on a Constructed-Language Testbed.* Preprint, Eschatia Labs, 2026. [Read the paper](https://eschatialabs.com/research/eldalambe-2026/).
 
 [LinkedIn](https://www.linkedin.com/in/mertkayacs) and [Kaggle](https://www.kaggle.com/mertilovski).
