@@ -19,6 +19,20 @@ Senior AI researcher and AI architect. I build small AI models and tools for dec
 - **[Tholos](https://github.com/mertkayacs/tholos)**: AI assistants that share tables, notes and tasks on your computer, with rules that allow, ask about or deny actions. Tholos-2B passed 137 of 160 Tholos-Bench scenarios against MiniCPM5-2B's 112 on a Kaggle T4 with llama.cpp and JSON schema decoding. [Model and benchmark](https://huggingface.co/mertkayacs/Tholos-2B).
 - **[reevesagents](https://github.com/mertkayacs/reevesagents)**: run AI coding tools side by side in a terminal workspace, or let one direct the others. [Demo and docs](https://reevesagents.mertkayacs.com).
 
+## Open source contributions
+
+Merged:
+
+- **[claude-code-router](https://github.com/musistudio/claude-code-router)**: the Docker entrypoint redirected every visitor to a URL that carried the management token, and that token reads and writes the router's configuration. The fix redirects without the token. [Pull request #1871](https://github.com/musistudio/claude-code-router/pull/1871).
+
+Open pull requests:
+
+- **[SGLang](https://github.com/sgl-project/sglang)**: keep Hermes streaming text in order around tool calls. [#43377](https://github.com/sgl-project/sglang/pull/43377)
+- **[lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)**: keep the question whitespace in the `mmlu_cot_llama` prompt. [#4346](https://github.com/EleutherAI/lm-evaluation-harness/pull/4346)
+- **[ccstatusline](https://github.com/sirmalloc/ccstatusline)**: Spend Limit Usage and Spend Limit Amount widgets for gateway users. [#695](https://github.com/sirmalloc/ccstatusline/pull/695)
+- **[claude-hud](https://github.com/jarrodwatts/claude-hud)**: serialize cost ledger updates across processes. [#802](https://github.com/jarrodwatts/claude-hud/pull/802)
+- **[claude-swap](https://github.com/realiti4/claude-swap)**: create the temporary JSON file with owner-only permissions from the start. [#442](https://github.com/realiti4/claude-swap/pull/442)
+
 ## Research
 
 MSc Computer Science, TED University. BSc Computer Engineering, TOBB University of Economics and Technology.
