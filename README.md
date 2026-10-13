@@ -42,7 +42,7 @@ Contributions by repository stars:
 - **[ccstatusline](https://github.com/sirmalloc/ccstatusline)** (13,272): added spend-limit usage widgets for developers behind a gateway. [PR #695](https://github.com/sirmalloc/ccstatusline/pull/695).
 - **[huggingface_hub](https://github.com/huggingface/huggingface_hub)** (3,983): accepted dataclass validators with `*args` or `**kwargs`. [PR #5131](https://github.com/huggingface/huggingface_hub/pull/5131).
 - **[claude-swap](https://github.com/realiti4/claude-swap)** (3,403): creates the temporary JSON file with owner-only permissions from the start. [PR #442](https://github.com/realiti4/claude-swap/pull/442).
-- **[hermes-official-plugins](https://github.com/NousResearch/hermes-official-plugins)** (266): fixed Home Assistant registration parsing and expanded Spotify client tests. [PR #1](https://github.com/NousResearch/hermes-official-plugins/pull/1), [PR #7](https://github.com/NousResearch/hermes-official-plugins/pull/7), [PR #8](https://github.com/NousResearch/hermes-homeassistant/pull/8), [PR #12](https://github.com/NousResearch/hermes-spotify/pull/12).
+- **[hermes-official-plugins](https://github.com/NousResearch/hermes-official-plugins)** (266): fixed Home Assistant registration parsing and expanded Spotify client tests. Open, review pending. [PR #1](https://github.com/NousResearch/hermes-official-plugins/pull/1), [PR #7](https://github.com/NousResearch/hermes-official-plugins/pull/7).
 
 [Full live open-source list](https://mertkayacs.com/open-source/).
 
