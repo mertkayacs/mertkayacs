@@ -60,7 +60,7 @@ Senior AI researcher and AI architect. Founder of [Eschatia Labs](https://eschat
   <tr>
     <td><strong><a href="https://github.com/mertkayacs/xdfdet">xdfdet</a></strong></td>
     <td><img src="https://img.shields.io/github/stars/mertkayacs/xdfdet?style=flat-square&amp;logo=github&amp;label=stars" alt="stars"></td>
-    <td><img src="https://img.shields.io/badge/dynamic/json?style=flat-square&amp;logo=huggingface&amp;label=HF%20downloads&amp;query=%24.downloads&amp;url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fmodels%2Fmertkayacs%2Fxdfdet%3Fexpand%5B%5D%3Ddownloads&amp;color=725114" alt="Hugging Face downloads"></td>
+    <td><img src="https://img.shields.io/badge/HF%20downloads-725-725114?style=flat-square&amp;logo=huggingface" alt="Hugging Face downloads"></td>
   </tr>
 </table>
 
