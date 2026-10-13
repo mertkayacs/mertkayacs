@@ -19,19 +19,32 @@ Senior AI researcher and AI architect. I build small AI models and tools for dec
 - **[Tholos](https://github.com/mertkayacs/tholos)**: AI assistants that share tables, notes and tasks on your computer, with rules that allow, ask about or deny actions. Tholos-2B passed 137 of 160 Tholos-Bench scenarios against MiniCPM5-2B's 112 on a Kaggle T4 with llama.cpp and JSON schema decoding. [Model and benchmark](https://huggingface.co/mertkayacs/Tholos-2B).
 - **[reevesagents](https://github.com/mertkayacs/reevesagents)**: run AI coding tools side by side in a terminal workspace, or let one direct the others. [Demo and docs](https://reevesagents.mertkayacs.com).
 
-## Open source contributions
+## Open source
 
-Merged:
+Own projects:
 
-- **[claude-code-router](https://github.com/musistudio/claude-code-router)**: the Docker entrypoint redirected every visitor to a URL that carried the management token, and that token reads and writes the router's configuration. The fix redirects without the token. [Pull request #1871](https://github.com/musistudio/claude-code-router/pull/1871).
+- **[reevesagents](https://github.com/mertkayacs/reevesagents)**: run AI coding tools side by side from one local terminal workspace. 106 GitHub stars, 6,567 npm downloads.
+- **[JevAlt](https://github.com/mertkayacs/jevalt)**: fixed-option decision models in English, Turkish and German, with probabilities per option. 5 GitHub stars, 4,336 Hugging Face downloads.
+- **[xdfdet](https://github.com/mertkayacs/xdfdet)**: deepfake video detectors with facial-region heatmaps from my MSc thesis. 8 GitHub stars, 725 Hugging Face downloads.
+- **[Tholos](https://github.com/mertkayacs/tholos)**: shared tables, notes, tasks and permission rules for local AI assistants. 1 GitHub star, 1,481 Hugging Face downloads.
+- **[Ultra Mod](https://github.com/mertkayacs/ultramod)**: usage HUDs, command guards, secret masking and receipts for Claude Code. 3 GitHub stars, 1,872 npm downloads.
+- **[JevOss](https://github.com/mertkayacs/jevoss)**: tests decision models for accuracy, probability quality, prompt injection and option-order sensitivity. 2 GitHub stars.
+- **[tholos-bench](https://huggingface.co/datasets/mertkayacs/tholos-bench)**: 160 tool-use scenarios for testing local AI assistants. 88 Hugging Face downloads.
+- **[reevesagents-skill](https://github.com/mertkayacs/reevesagents-skill)**: reevesagents instructions and setup for Claude Code, Codex and Kimi Code.
+- **[Eldalambë paper](https://eschatialabs.com)**: language preservation research while the code, data and weights stay private.
 
-Open pull requests:
+Contributions by repository stars:
 
-- **[SGLang](https://github.com/sgl-project/sglang)**: keep Hermes streaming text in order around tool calls. [#43377](https://github.com/sgl-project/sglang/pull/43377)
-- **[lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)**: keep the question whitespace in the `mmlu_cot_llama` prompt. [#4346](https://github.com/EleutherAI/lm-evaluation-harness/pull/4346)
-- **[ccstatusline](https://github.com/sirmalloc/ccstatusline)**: Spend Limit Usage and Spend Limit Amount widgets for gateway users. [#695](https://github.com/sirmalloc/ccstatusline/pull/695)
-- **[claude-hud](https://github.com/jarrodwatts/claude-hud)**: serialize cost ledger updates across processes. [#802](https://github.com/jarrodwatts/claude-hud/pull/802)
-- **[claude-swap](https://github.com/realiti4/claude-swap)**: create the temporary JSON file with owner-only permissions from the start. [#442](https://github.com/realiti4/claude-swap/pull/442)
+- **[claude-code-router](https://github.com/musistudio/claude-code-router)** (37,651): fixed a Docker redirect that exposed the management token. [PR #1871](https://github.com/musistudio/claude-code-router/pull/1871).
+- **[SGLang](https://github.com/sgl-project/sglang)** (37,087): keeps Hermes streaming text in order around tool calls. [PR #43377](https://github.com/sgl-project/sglang/pull/43377).
+- **[claude-hud](https://github.com/jarrodwatts/claude-hud)** (28,492): serialized cost ledger updates across processes. [PR #802](https://github.com/jarrodwatts/claude-hud/pull/802).
+- **[lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)** (14,208): keeps question whitespace intact in the `mmlu_cot_llama` prompt. [PR #4346](https://github.com/EleutherAI/lm-evaluation-harness/pull/4346).
+- **[ccstatusline](https://github.com/sirmalloc/ccstatusline)** (13,272): added spend-limit usage widgets for developers behind a gateway. [PR #695](https://github.com/sirmalloc/ccstatusline/pull/695).
+- **[huggingface_hub](https://github.com/huggingface/huggingface_hub)** (3,983): accepted dataclass validators with `*args` or `**kwargs`. [PR #5131](https://github.com/huggingface/huggingface_hub/pull/5131).
+- **[claude-swap](https://github.com/realiti4/claude-swap)** (3,403): creates the temporary JSON file with owner-only permissions from the start. [PR #442](https://github.com/realiti4/claude-swap/pull/442).
+- **[hermes-official-plugins](https://github.com/NousResearch/hermes-official-plugins)** (266): fixed Home Assistant registration parsing and expanded Spotify client tests. [PR #1](https://github.com/NousResearch/hermes-official-plugins/pull/1), [PR #7](https://github.com/NousResearch/hermes-official-plugins/pull/7), [PR #8](https://github.com/NousResearch/hermes-homeassistant/pull/8), [PR #12](https://github.com/NousResearch/hermes-spotify/pull/12).
+
+[Full live open-source list](https://mertkayacs.com/open-source/).
 
 ## Research
 
