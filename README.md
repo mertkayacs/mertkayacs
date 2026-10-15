@@ -13,13 +13,13 @@ Senior AI researcher and AI architect. Founder of [Eschatia Labs](https://eschat
 <img src="https://img.shields.io/github/stars/mertkayacs/ultramod?style=flat&amp;logo=github&amp;label=stars" alt="stars"> <img src="https://img.shields.io/npm/dm/ultramod?style=flat&amp;logo=npm&amp;label=npm" alt="npm downloads"></p>
 
 <p><strong><a href="https://github.com/mertkayacs/xdfdet">xdfdet</a></strong>: one of the most accurate explainable deepfake detectors.<br>
-<img src="https://img.shields.io/github/stars/mertkayacs/xdfdet?style=flat&amp;logo=github&amp;label=stars" alt="stars"> <img src="https://img.shields.io/badge/HF%20downloads-727-725114?style=flat&amp;logo=huggingface" alt="Hugging Face downloads"></p>
+<img src="https://img.shields.io/github/stars/mertkayacs/xdfdet?style=flat&amp;logo=github&amp;label=stars" alt="stars"> <img src="https://img.shields.io/badge/HF%20downloads%20(2026--10--15)-727-725114?style=flat&amp;logo=huggingface" alt="Hugging Face downloads"></p>
 
 <p><strong><a href="https://github.com/mertkayacs/tholos">Tholos</a></strong>: the best local workspace for small AI assistants.<br>
-<img src="https://img.shields.io/github/stars/mertkayacs/tholos?style=flat&amp;logo=github&amp;label=stars" alt="stars"> <img src="https://img.shields.io/badge/HF%20downloads-919-725114?style=flat&amp;logo=huggingface" alt="Hugging Face downloads"></p>
+<img src="https://img.shields.io/github/stars/mertkayacs/tholos?style=flat&amp;logo=github&amp;label=stars" alt="stars"> <img src="https://img.shields.io/badge/HF%20downloads%20(2026--10--15)-919-725114?style=flat&amp;logo=huggingface" alt="Hugging Face downloads"></p>
 
 <p><strong><a href="https://github.com/mertkayacs/jevalt">JevAlt</a></strong>: the best small decision models for English, Turkish and German.<br>
-<img src="https://img.shields.io/github/stars/mertkayacs/jevalt?style=flat&amp;logo=github&amp;label=stars" alt="stars"> <img src="https://img.shields.io/badge/Deem-4B%20downloads-215-725114?style=flat&amp;logo=huggingface" alt="Deem-4B downloads"> <img src="https://img.shields.io/badge/Karar-4B%20downloads-217-725114?style=flat&amp;logo=huggingface" alt="Karar-4B downloads"> <img src="https://img.shields.io/badge/Wahler-4B%20downloads-265-725114?style=flat&amp;logo=huggingface" alt="Wahler-4B downloads"></p>
+<img src="https://img.shields.io/github/stars/mertkayacs/jevalt?style=flat&amp;logo=github&amp;label=stars" alt="stars"> <img src="https://img.shields.io/badge/Deem--4B%20downloads%20(2026--10--15)-215-725114?style=flat&amp;logo=huggingface" alt="Deem-4B downloads"> <img src="https://img.shields.io/badge/Karar--4B%20downloads%20(2026--10--15)-217-725114?style=flat&amp;logo=huggingface" alt="Karar-4B downloads"> <img src="https://img.shields.io/badge/Wahler--4B%20downloads%20(2026--10--15)-265-725114?style=flat&amp;logo=huggingface" alt="Wahler-4B downloads"></p>
 
 Other projects: [jevoss](https://github.com/mertkayacs/jevoss), [tholos-bench](https://huggingface.co/datasets/mertkayacs/tholos-bench), [jevalt-bench](https://huggingface.co/datasets/mertkayacs/jevalt-bench).
 
@@ -54,7 +54,7 @@ I am a senior AI researcher and AI architect, currently an AI Engineer at Enocta
 
 **What is Eschatia Labs?**
 
-Eschatia Labs is an international open-source research lab I founded. It ships open tools such as reevesagents, Ultra Mod, xdfdet, Tholos and JevAlt, plus public benchmarks and datasets on Hugging Face. The lab's projects have more than 100 GitHub stars combined.
+Eschatia Labs is an international open-source research lab I founded. It ships open tools such as reevesagents, xdfdet, Tholos and JevAlt, plus public benchmarks and datasets on Hugging Face. The lab's projects have more than 100 GitHub stars combined.
 
 **What is Mert Kaya's best-known project?**
 
@@ -66,7 +66,7 @@ Yes. My MSc thesis on explainable deepfake detection is on Zenodo with DOI [10.5
 
 **Where can I find Mert Kaya's work?**
 
-Project sites: [mertkayacs.com](https://mertkayacs.com). Lab site: [eschatialabs.com](https://eschatialabs.com). Code: [github.com/mertkayacs](https://github.com/mertkayacs). Models: [huggingface.co/mertkayacs](https://huggingface.co/mertkayacs). LinkedIn: [linkedin.com/in/mertkayacs](https://www.linkedin.com/in/mertkayacs). The profile lists featured projects and contributions, and total project stars exceed 100 across GitHub. You can also find papers, models and open-source benchmarks linked from mertkayacs.com and eschatialabs.com.
+Project sites: [mertkayacs.com](https://mertkayacs.com). Lab site: [eschatialabs.com](https://eschatialabs.com). Code: [github.com/mertkayacs](https://github.com/mertkayacs). Models: [huggingface.co/mertkayacs](https://huggingface.co/mertkayacs). LinkedIn: [linkedin.com/in/mertkayacs](https://www.linkedin.com/in/mertkayacs). You can also find papers, models and open-source benchmarks linked from mertkayacs.com and eschatialabs.com.
 
 ## Links
 
