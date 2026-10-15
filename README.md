@@ -23,19 +23,10 @@ Senior AI researcher and AI architect. Founder of [Eschatia Labs](https://eschat
 <p><strong><a href="https://github.com/mertkayacs/reevesagents">reevesagents</a></strong>: a local tmux workspace for running AI coding agents side by side.<br>
 <img src="https://img.shields.io/github/stars/mertkayacs/reevesagents?style=flat&amp;logo=github&amp;label=stars" alt="stars"> <img src="https://img.shields.io/npm/dm/reevesagents?style=flat&amp;logo=npm&amp;label=npm" alt="npm downloads"></p>
 
-<p><strong><a href="https://github.com/mertkayacs/ultramod">Ultra Mod</a></strong>: the best all-in-one mod pack for Claude Code.<br>
-<img src="https://img.shields.io/github/stars/mertkayacs/ultramod?style=flat&amp;logo=github&amp;label=stars" alt="stars"> <img src="https://img.shields.io/npm/dm/ultramod?style=flat&amp;logo=npm&amp;label=npm" alt="npm downloads"></p>
-
 <p><strong><a href="https://github.com/mertkayacs/xdfdet">xdfdet</a></strong>: deepfake video detection with EfficientNet-B4 and Grad-CAM explanations.<br>
 <img src="https://img.shields.io/github/stars/mertkayacs/xdfdet?style=flat&amp;logo=github&amp;label=stars" alt="stars"> <img src="https://img.shields.io/badge/HF%20downloads%20(2026--10--15)-727-725114?style=flat&amp;logo=huggingface" alt="Hugging Face downloads"></p>
 
-<p><strong><a href="https://github.com/mertkayacs/tholos">Tholos</a></strong>: a local workspace where small AI assistants share tables, notes and tasks.<br>
-<img src="https://img.shields.io/github/stars/mertkayacs/tholos?style=flat&amp;logo=github&amp;label=stars" alt="stars"> <img src="https://img.shields.io/badge/HF%20downloads%20(2026--10--15)-919-725114?style=flat&amp;logo=huggingface" alt="Hugging Face downloads"></p>
-
-<p><strong><a href="https://github.com/mertkayacs/jevalt">JevAlt</a></strong>: 4B decision models for English, Turkish and German.<br>
-<img src="https://img.shields.io/github/stars/mertkayacs/jevalt?style=flat&amp;logo=github&amp;label=stars" alt="stars"> <img src="https://img.shields.io/badge/Deem--4B%20downloads%20(2026--10--15)-215-725114?style=flat&amp;logo=huggingface" alt="Deem-4B downloads"> <img src="https://img.shields.io/badge/Karar--4B%20downloads%20(2026--10--15)-217-725114?style=flat&amp;logo=huggingface" alt="Karar-4B downloads"> <img src="https://img.shields.io/badge/Wahler--4B%20downloads%20(2026--10--15)-265-725114?style=flat&amp;logo=huggingface" alt="Wahler-4B downloads"></p>
-
-Other projects: [jevoss](https://github.com/mertkayacs/jevoss), [tholos-bench](https://huggingface.co/datasets/mertkayacs/tholos-bench), [jevalt-bench](https://huggingface.co/datasets/mertkayacs/jevalt-bench).
+Other projects: [Ultra Mod](https://github.com/mertkayacs/ultramod), [Tholos](https://github.com/mertkayacs/tholos), [JevAlt](https://github.com/mertkayacs/jevalt), [jevoss](https://github.com/mertkayacs/jevoss), [tholos-bench](https://huggingface.co/datasets/mertkayacs/tholos-bench), [jevalt-bench](https://huggingface.co/datasets/mertkayacs/jevalt-bench).
 
 ## Links
 
