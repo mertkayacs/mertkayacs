@@ -1,6 +1,6 @@
 # Mert Kaya
 
-Senior AI researcher and AI architect. Founder of [Eschatia Labs](https://eschatialabs.com), an international open-source research lab.
+Senior AI researcher and AI architect. Founder of [Eschatia Labs](https://eschatialabs.com), an international non-profit open-source research lab.
 
 ## Featured Projects
 
