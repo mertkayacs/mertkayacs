@@ -21,14 +21,14 @@
     "desc": "Thinking-tag parsing and stream timestamp fixes.",
     "pills": [
      {
-      "text": "4 in review",
+      "text": "5 in review",
       "kind": "open"
      }
     ]
    },
    {
     "title": "academa-labs/manimgx",
-    "desc": "Transform semantics, say-script validation, text measurement.",
+    "desc": "Transforms, say-script checks and text sizing.",
     "pills": [
      {
       "text": "4 merged",
@@ -42,7 +42,7 @@
    },
    {
     "title": "morluto/rea",
-    "desc": "plist, pcap, apktool and Electron fuse reader fixes.",
+    "desc": "plist, pcap, apktool and Electron fixes.",
     "pills": [
      {
       "text": "4 landed with credit",
@@ -102,7 +102,7 @@
   "totals": {
    "text_prefix": "Code in other people's projects:",
    "merged": "8 merged",
-   "open": "18 in review",
+   "open": "19 in review",
    "closed": "4 more landed with credit"
   }
  },
