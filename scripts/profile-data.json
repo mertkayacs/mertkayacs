@@ -3,24 +3,19 @@
     "intro": "I'm a senior AI engineer at Enocta and the founder of [Eschatia Labs](https://eschatialabs.com), an independent, non-profit open-source AI research lab. I build small models that run on a laptop, agents you can inspect and detectors that show their evidence.",
     "career": [
       {
-        "when": "Since 2025",
-        "role": "<b>Senior AI Engineer</b>, Enocta. Assistants that answer from company documents (RAG), an agentic customer-success workflow, role-play training simulations."
+        "text": "**Senior AI Engineer**, Enocta (since 2025). Assistants that answer from company documents (RAG), an agentic customer-success workflow, role-play training simulations."
       },
       {
-        "when": "2023-2024",
-        "role": "<b>Full-stack Engineer</b>, Credit Bureau of Turkey (KKB). Financial software used across the Turkish banking sector: backend, mobile and system design."
+        "text": "**Full-stack Engineer**, Credit Bureau of Turkey (KKB) (2023-2024). Financial software used across the Turkish banking sector: backend, mobile and system design."
       },
       {
-        "when": "2022-2023",
-        "role": "<b>AI and Full-stack Engineer</b> (contract), AgriDL5.0. Models that predict growing conditions in vertical farms, plus the Flutter app on top."
+        "text": "**AI and Full-stack Engineer** (contract), AgriDL5.0 (2022-2023). Models that predict growing conditions in vertical farms, plus the Flutter app on top."
       },
       {
-        "when": "2021-2022",
-        "role": "<b>Backend and Data Engineer</b>, Alictus. Moved internal tools to the cloud with Go and Azure."
+        "text": "**Backend and Data Engineer**, Alictus (2021-2022). Moved internal tools to the cloud with Go and Azure."
       },
       {
-        "when": "2019-2021",
-        "role": "<b>Internships</b>, SimBT, BiSoft and Roar Games Studio. Defence technology software, an NLTK and Neo4j chatbot before LLMs, Unity and C# games."
+        "text": "**Internships**, SimBT, BiSoft and Roar Games Studio (2019-2021). Defence technology software, an NLTK and Neo4j chatbot before LLMs, Unity and C# games."
       }
     ],
     "projects": [
@@ -144,7 +139,7 @@
     "education": [
       {
         "title": "MSc Computer Science",
-        "text": "TED University, 2023-2025, full merit scholarship. Thesis: <a href=\"https://doi.org/10.5281/zenodo.18998566\">Explainable deepfake detection using frame level CNN models: A comparative study of augmentation and cutout techniques</a>, advised by Professor Venera Adanova."
+        "text": "TED University, 2023-2025, full merit scholarship. Thesis: [Explainable deepfake detection using frame level CNN models: A comparative study of augmentation and cutout techniques](https://doi.org/10.5281/zenodo.18998566), advised by Professor Venera Adanova."
       },
       {
         "title": "MSc Computer Science and AI",
@@ -156,7 +151,7 @@
       },
       {
         "title": "UBMK 2026 (IEEE)",
-        "text": "<a href=\"https://mertkayacs.com/research/\">Augmentation and Cutout in Deepfake Detection: A Comparative Study of Accuracy, Calibration, and Attention</a>, with Professor Venera Adanova. Presented at the 11th International Conference on Computer Science and Engineering in Istanbul, September 2026. To appear in IEEE Xplore."
+        "text": "[Augmentation and Cutout in Deepfake Detection: A Comparative Study of Accuracy, Calibration, and Attention](https://mertkayacs.com/research/), with Professor Venera Adanova. Presented at the 11th International Conference on Computer Science and Engineering in Istanbul, September 2026. To appear in IEEE Xplore."
       }
     ],
     "openSource": {
@@ -238,7 +233,7 @@
         },
         {
           "name": "DeepSeek Harness",
-          "href": "https://github.com/deepseek-ai/deepseek-harness/issues/10604",
+          "href": "https://github.com/deepseek-ai/deepseek-harness/discussions/10604",
           "logo": "deepseek-harness.png"
         },
         {
