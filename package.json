@@ -1,0 +1,11 @@
+{
+  "name": "mertkayacs-profile",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-skill-tiles.mjs && node scripts/build-profile.mjs"
+  },
+  "devDependencies": {
+    "simple-icons": "16.35.0"
+  }
+}

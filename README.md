@@ -44,21 +44,27 @@ Counts as of 22 October 2026. In total: 9,775 downloads of my AI models and data
 <table>
   <tr>
     <td>Languages</td>
-    <td><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py%2Cts%2Cgo%2Cbash&theme=dark"><img alt="Python, TypeScript, Go, Bash" src="https://skillicons.dev/icons?i=py,ts,go,bash&theme=light"></picture></td>
+    <td><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py%2Cts%2Cjs%2Cjava%2Cgo%2Ccpp%2Ccs%2Cdart%2Cphp%2Cbash&theme=dark"><img alt="Python, TypeScript, JavaScript, Java, Go, C++, C#, Dart, PHP, Bash" src="https://skillicons.dev/icons?i=py,ts,js,java,go,cpp,cs,dart,php,bash&theme=light" width="554"></picture></td>
   </tr>
   <tr>
-    <td>AI and ML</td>
-    <td><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=pytorch%2Ctensorflow%2Csklearn%2Copencv&theme=dark"><img alt="PyTorch, TensorFlow, scikit-learn, OpenCV" src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,opencv&theme=light"></picture></td>
+    <td>AI and data</td>
+    <td><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=pytorch%2Ctensorflow%2Csklearn%2Copencv&theme=dark"><img alt="PyTorch, TensorFlow, scikit-learn, OpenCV" src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,opencv&theme=light" width="217"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="assets/skills/strip-ai-and-data-dark.svg"><img alt="Keras, Hugging Face, Jupyter, Kaggle, Ollama, Gradio, Streamlit" src="assets/skills/strip-ai-and-data-light.svg" width="394"></picture></td>
   </tr>
   <tr>
-    <td>Web</td>
-    <td><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react%2Castro%2Ctailwind%2Cnodejs%2Cfastapi&theme=dark"><img alt="React, Astro, Tailwind CSS, Node.js, FastAPI" src="https://skillicons.dev/icons?i=react,astro,tailwind,nodejs,fastapi&theme=light"></picture></td>
+    <td>Web, apps and games</td>
+    <td><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react%2Cnextjs%2Castro%2Cvue%2Cnodejs%2Cfastapi%2Cflask%2Ctailwind%2Cvite%2Cflutter%2Cfirebase%2Cunity%2Chtmx&theme=dark"><img alt="React, Next.js, Astro, Vue.js, Node.js, FastAPI, Flask, Tailwind CSS, Vite, Flutter, Firebase, Unity, htmx" src="https://skillicons.dev/icons?i=react,nextjs,astro,vue,nodejs,fastapi,flask,tailwind,vite,flutter,firebase,unity,htmx&theme=light" width="723"></picture></td>
   </tr>
   <tr>
-    <td>Infrastructure</td>
-    <td><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=docker%2Clinux%2Cgithubactions%2Ccloudflare%2Cazure&theme=dark"><img alt="Docker, Linux, GitHub Actions, Cloudflare, Azure" src="https://skillicons.dev/icons?i=docker,linux,githubactions,cloudflare,azure&theme=light"></picture></td>
+    <td>Databases</td>
+    <td><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=postgres%2Cmysql%2Csqlite%2Csupabase&theme=dark"><img alt="PostgreSQL, MySQL, SQLite, Supabase" src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,supabase&theme=light" width="217"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="assets/skills/strip-databases-dark.svg"><img alt="Neo4j" src="assets/skills/strip-databases-light.svg" width="56"></picture></td>
+  </tr>
+  <tr>
+    <td>Infrastructure and tools</td>
+    <td><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=docker%2Clinux%2Cubuntu%2Carch%2Cgit%2Cgithubactions%2Ccloudflare%2Cazure%2Cnginx%2Cansible%2Cgrafana%2Cprometheus%2Carduino%2Cnpm%2Cpnpm%2Clatex&perline=8&theme=dark"><img alt="Docker, Linux, Ubuntu, Arch, Git, GitHub Actions, Cloudflare, Azure, Nginx, Ansible, Grafana, Prometheus, Arduino, npm, pnpm, LaTeX" src="https://skillicons.dev/icons?i=docker,linux,ubuntu,arch,git,githubactions,cloudflare,azure,nginx,ansible,grafana,prometheus,arduino,npm,pnpm,latex&perline=8&theme=light" width="442"></picture></td>
   </tr>
 </table>
+
+Also: SQL, NLTK, Weaviate.
 
 With them I fine-tune and evaluate small models (JevAlt, Tholos-2B, JevOss), explain detectors with Grad-CAM (xdfdet) and build agents and MCP servers (reevesagents, Tholos).
 
