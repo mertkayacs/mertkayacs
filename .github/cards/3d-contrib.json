@@ -16,7 +16,7 @@
     "foregroundColor": "#e6edf3",
     "strongColor": "#f0f6fc",
     "weakColor": "#9198a1",
-    "radarColor": "#26a641",
-    "contribColors": ["#30363d", "#0e4429", "#006d32", "#26a641", "#39d353"]
+    "radarColor": "#3fb950",
+    "contribColors": ["#30363d", "#196c2e", "#2ea043", "#3fb950", "#56d364"]
   }
 ]
