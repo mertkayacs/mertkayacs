@@ -1,0 +1,148 @@
+{
+ "as_of": "2026-10-22",
+ "banner": {
+  "name": "Mert Kaya",
+  "role": "Senior AI researcher and AI architect"
+ },
+ "oss": {
+  "cards": [
+   {
+    "title": "huggingface/datasets",
+    "desc": "to_csv, to_sql and ClassLabel fixes.",
+    "pills": [
+     {
+      "text": "6 in review",
+      "kind": "open"
+     }
+    ]
+   },
+   {
+    "title": "ollama/ollama",
+    "desc": "Thinking-tag parsing and stream timestamp fixes.",
+    "pills": [
+     {
+      "text": "4 in review",
+      "kind": "open"
+     }
+    ]
+   },
+   {
+    "title": "academa-labs/manimgx",
+    "desc": "Transform semantics, say-script validation, text measurement.",
+    "pills": [
+     {
+      "text": "4 merged",
+      "kind": "merged"
+     },
+     {
+      "text": "1 in review",
+      "kind": "open"
+     }
+    ]
+   },
+   {
+    "title": "morluto/rea",
+    "desc": "plist, pcap, apktool and Electron fuse reader fixes.",
+    "pills": [
+     {
+      "text": "4 landed with credit",
+      "kind": "landed"
+     },
+     {
+      "text": "2 in review",
+      "kind": "open"
+     }
+    ]
+   },
+   {
+    "title": "NousResearch/hermes-agent",
+    "desc": "Turn handling, package payload and MCP docs fixes.",
+    "pills": [
+     {
+      "text": "3 in review",
+      "kind": "open"
+     }
+    ]
+   },
+   {
+    "title": "Claude Code tooling",
+    "desc": "Token leak, cost ledger and temp-file fixes.",
+    "pills": [
+     {
+      "text": "4 merged",
+      "kind": "merged"
+     }
+    ]
+   },
+   {
+    "title": "sgl-project/sglang",
+    "desc": "Keeps streamed text in order around tool calls.",
+    "pills": [
+     {
+      "text": "1 in review",
+      "kind": "open"
+     }
+    ]
+   },
+   {
+    "title": "Curated lists and catalogs",
+    "desc": "reevesagents, Tholos, JevAlt, JevOss and Ultra Mod listed.",
+    "pills": [
+     {
+      "text": "22 merged",
+      "kind": "merged"
+     },
+     {
+      "text": "13 in review",
+      "kind": "open"
+     }
+    ]
+   }
+  ],
+  "totals": {
+   "text_prefix": "Code in other people's projects:",
+   "merged": "8 merged",
+   "open": "18 in review",
+   "closed": "4 more landed with credit"
+  }
+ },
+ "projects": [
+  {
+   "name": "reevesagents",
+   "desc": "Run many coding CLIs side by side in one tmux workspace.",
+   "stat": "109 stars, 1,265 npm downloads last month",
+   "href": "https://github.com/mertkayacs/reevesagents"
+  },
+  {
+   "name": "xdfdet",
+   "desc": "Deepfake video detection with EfficientNet-B4 and Grad-CAM heatmaps.",
+   "stat": "976 Hugging Face downloads",
+   "href": "https://github.com/mertkayacs/xdfdet"
+  },
+  {
+   "name": "tholos",
+   "desc": "A local workspace where small AI assistants share tables and notes.",
+   "stat": "v0.1.2",
+   "href": "https://github.com/mertkayacs/tholos"
+  },
+  {
+   "name": "jevalt",
+   "desc": "Three 4B decision models for English, Turkish and German.",
+   "stat": "v0.1.0",
+   "href": "https://github.com/mertkayacs/jevalt"
+  },
+  {
+   "name": "jevoss",
+   "desc": "Evaluation tools for Jev-compatible decision models.",
+   "stat": "v0.1.0",
+   "href": "https://github.com/mertkayacs/jevoss"
+  },
+  {
+   "name": "ultramod",
+   "desc": "All-in-one mod pack for Claude Code.",
+   "stat": "2,218 npm downloads last month",
+   "href": "https://github.com/mertkayacs/ultramod"
+  }
+ ],
+ "footnote": "Counts as of 2026-10-22."
+}
