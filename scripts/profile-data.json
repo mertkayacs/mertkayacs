@@ -55,9 +55,13 @@
     ]
    },
    {
-    "title": "NousResearch/hermes-agent",
-    "desc": "Turn handling, package payload and MCP docs fixes.",
+    "title": "NousResearch Hermes",
+    "desc": "Plugin fixes merged; agent fixes in review.",
     "pills": [
+     {
+      "text": "2 merged",
+      "kind": "merged"
+     },
      {
       "text": "3 in review",
       "kind": "open"
@@ -75,12 +79,16 @@
     ]
    },
    {
-    "title": "sgl-project/sglang",
-    "desc": "Keeps streamed text in order around tool calls.",
+    "title": "AI coding CLIs",
+    "desc": "Qwen Code and Claude SDK fixes; Kimi, Codex, DeepSeek reports.",
     "pills": [
      {
-      "text": "1 in review",
+      "text": "2 in review",
       "kind": "open"
+     },
+     {
+      "text": "3 reported",
+      "kind": "landed"
      }
     ]
    },
@@ -101,8 +109,8 @@
   ],
   "totals": {
    "text_prefix": "Code in other people's projects:",
-   "merged": "8 merged",
-   "open": "19 in review",
+   "merged": "10 merged",
+   "open": "21 in review",
    "closed": "4 more landed with credit"
   }
  },

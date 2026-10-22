@@ -13,7 +13,7 @@ Founder of [Eschatia Labs](https://eschatialabs.com), an independent, non-profit
   <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/oss-light-narrow.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/oss-light.svg">
-  <img alt="Open-source contributions as of 2026-10-22: 8 merged and 19 in review in other people's projects, 4 more landed with credit, and listings in 16 curated lists" src="assets/oss-dark.svg" width="880">
+  <img alt="Open-source contributions as of 2026-10-22: 10 merged and 21 in review in other people's projects, 4 more landed with credit, 3 bug reports with fixes, and listings in 16 curated lists" src="assets/oss-dark.svg" width="880">
 </picture>
 
 ## Projects
