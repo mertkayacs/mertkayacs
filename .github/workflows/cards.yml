@@ -1,0 +1,68 @@
+# Generates the cards shown in README.md and publishes them to the orphan "cards"
+# branch, so the daily SVGs never land in this branch's history.
+name: Profile cards
+
+on:
+  schedule:
+    - cron: "20 3 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/cards.yml"
+      - ".github/cards/3d-contrib.json"
+
+permissions:
+  contents: write
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: 3D contribution calendar
+        uses: yoshi389111/github-profile-3d-contrib@7d95e7d4cdc028dd1e1cbd957d65f35efb12ae39 # v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: mertkayacs
+          SETTING_JSON: .github/cards/3d-contrib.json
+
+      - name: Summary cards, light theme
+        uses: vn7n24fzkq/github-profile-summary-cards@58ec032e39377dd38329bdc1db70074fe74fbb17 # v0.12.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: mertkayacs
+          THEME: github
+          AUTO_PUSH: false
+
+      # The summary action wipes its output folder on every run, so keep each theme before the next run.
+      - name: Keep the light cards
+        run: |
+          mkdir -p dist
+          cp profile-3d-contrib/contrib-light.svg profile-3d-contrib/contrib-dark.svg dist/
+          cp profile-summary-card-output/github/3-stats.svg dist/stats-light.svg
+          cp profile-summary-card-output/github/2-most-commit-language.svg dist/languages-light.svg
+
+      - name: Summary cards, dark theme
+        uses: vn7n24fzkq/github-profile-summary-cards@58ec032e39377dd38329bdc1db70074fe74fbb17 # v0.12.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: mertkayacs
+          THEME: github_dark
+          AUTO_PUSH: false
+
+      - name: Keep the dark cards
+        run: |
+          cp profile-summary-card-output/github_dark/3-stats.svg dist/stats-dark.svg
+          cp profile-summary-card-output/github_dark/2-most-commit-language.svg dist/languages-dark.svg
+
+      - name: Publish to the cards branch
+        uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4.1.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: cards
+          publish_dir: dist
+          force_orphan: true
+          full_commit_message: "chore(cards): refresh generated cards"
