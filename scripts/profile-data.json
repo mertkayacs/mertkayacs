@@ -3,19 +3,19 @@
     "intro": "I'm a senior AI engineer at Enocta and the founder of [Eschatia Labs](https://eschatialabs.com), an independent, non-profit open-source AI research lab. I build small models that run on a laptop, agents you can inspect and detectors that show their evidence.",
     "career": [
       {
-        "text": "**Senior AI Engineer**, Enocta (since 2025). Assistants that answer from company documents (RAG), an agentic customer-success workflow, role-play training simulations."
+        "text": "**Senior AI Engineer**, Enocta, since 2025. Assistants that answer from company documents (RAG), an agentic customer-success workflow, role-play training simulations."
       },
       {
-        "text": "**Full-stack Engineer**, Credit Bureau of Turkey (KKB) (2023-2024). Financial software used across the Turkish banking sector: backend, mobile and system design."
+        "text": "**Full-stack and Mobile Engineer**, Credit Bureau of Turkey (KKB), 2023-2024. Financial software used across the Turkish banking sector: backend, mobile and system design."
       },
       {
-        "text": "**AI and Full-stack Engineer** (contract), AgriDL5.0 (2022-2023). Models that predict growing conditions in vertical farms, plus the Flutter app on top."
+        "text": "**AI and Full-stack Engineer**, AgriDL5.0, 2022-2023 (contract). Models that predict growing conditions in vertical farms, plus the Flutter app on top."
       },
       {
-        "text": "**Backend and Data Engineer**, Alictus (2021-2022). Moved internal tools to the cloud with Go and Azure."
+        "text": "**Backend and Data Engineer**, Alictus, 2021-2022. Moved internal tools to the cloud with Go and Azure."
       },
       {
-        "text": "**Internships**, SimBT, BiSoft and Roar Games Studio (2019-2021). Defence technology software, an NLTK and Neo4j chatbot before LLMs, Unity and C# games."
+        "text": "**Internships** at SimBT, BiSoft and Roar Games Studio, 2019-2021. Defence technology software, an NLTK and Neo4j chatbot before LLMs, Unity and C# games."
       }
     ],
     "projects": [
@@ -27,7 +27,7 @@
       {
         "name": "reevesagents",
         "href": "https://github.com/mertkayacs/reevesagents",
-        "text": "Run Claude Code, Codex and 20+ other coding assistants side by side in one terminal, with one of them coordinating the rest. CLI, TUI, Web UI and MCP server. 107 stars, 1.3k npm downloads a month."
+        "text": "Run Claude Code, Codex and 20+ other coding assistants side by side in one terminal, with one of them coordinating the rest. CLI, TUI, Web UI and MCP server. 107 stars, 2.4k npm downloads a month."
       },
       {
         "name": "JevAlt",

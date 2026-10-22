@@ -2,16 +2,16 @@ I'm a senior AI engineer at Enocta and the founder of [Eschatia Labs](https://es
 
 ## Career
 
-- **Senior AI Engineer**, Enocta (since 2025). Assistants that answer from company documents (RAG), an agentic customer-success workflow, role-play training simulations.
-- **Full-stack Engineer**, Credit Bureau of Turkey (KKB) (2023-2024). Financial software used across the Turkish banking sector: backend, mobile and system design.
-- **AI and Full-stack Engineer** (contract), AgriDL5.0 (2022-2023). Models that predict growing conditions in vertical farms, plus the Flutter app on top.
-- **Backend and Data Engineer**, Alictus (2021-2022). Moved internal tools to the cloud with Go and Azure.
-- **Internships**, SimBT, BiSoft and Roar Games Studio (2019-2021). Defence technology software, an NLTK and Neo4j chatbot before LLMs, Unity and C# games.
+- **Senior AI Engineer**, Enocta, since 2025. Assistants that answer from company documents (RAG), an agentic customer-success workflow, role-play training simulations.
+- **Full-stack and Mobile Engineer**, Credit Bureau of Turkey (KKB), 2023-2024. Financial software used across the Turkish banking sector: backend, mobile and system design.
+- **AI and Full-stack Engineer**, AgriDL5.0, 2022-2023 (contract). Models that predict growing conditions in vertical farms, plus the Flutter app on top.
+- **Backend and Data Engineer**, Alictus, 2021-2022. Moved internal tools to the cloud with Go and Azure.
+- **Internships** at SimBT, BiSoft and Roar Games Studio, 2019-2021. Defence technology software, an NLTK and Neo4j chatbot before LLMs, Unity and C# games.
 
 ## Projects
 
 - **[Emberwick](https://emberwick.mertkayacs.com)**: A medieval village you play in the browser. Three small decision models decide what the villagers do through storms, fires, markets and wolves.
-- **[reevesagents](https://github.com/mertkayacs/reevesagents)**: Run Claude Code, Codex and 20+ other coding assistants side by side in one terminal, with one of them coordinating the rest. CLI, TUI, Web UI and MCP server. 107 stars, 1.3k npm downloads a month.
+- **[reevesagents](https://github.com/mertkayacs/reevesagents)**: Run Claude Code, Codex and 20+ other coding assistants side by side in one terminal, with one of them coordinating the rest. CLI, TUI, Web UI and MCP server. 107 stars, 2.4k npm downloads a month.
 - **[JevAlt](https://github.com/mertkayacs/jevalt)**: The three 4B decision models behind Emberwick, for English, Turkish and German. Calibrated answers on a laptop with about 3 GB of memory. 3.3k Hugging Face downloads.
 - **[xdfdet](https://github.com/mertkayacs/xdfdet)**: Explainable deepfake detection: eight EfficientNet-B4 models with Grad-CAM evidence, the code behind my thesis and conference paper. 977 Hugging Face downloads.
 - **[Tholos](https://github.com/mertkayacs/tholos)**: Small local assistants that share tables, notes and a task board, every action behind a rule. Its model, Tholos-2B: 2.2k Hugging Face downloads.
