@@ -1,24 +1,94 @@
-// build-skill-tiles.mjs: renders custom skill tiles for items skillicons.dev does not have,
-// matching the tandpfun/skill-icons look: 256 viewBox, rounded square rx 60, light tile
-// #F4F2ED, dark tile #242938, logo centred with its longest side at 200 of 256 units.
-// Logos come from the pinned simple-icons package (CC0). Run: node scripts/build-skill-tiles.mjs
+// build-skill-tiles.mjs: builds one self-hosted SVG strip per stack row and theme into
+// assets/skills/rows/, so every row scales by the same factor at any width. Geometry
+// lives in scripts/skill-geometry.mjs. Glyphs come from the vendored tandpfun/skill-icons
+// files in assets/skills/icons (MIT, see assets/skills/NOTICE.md); the custom tiles are
+// drawn from the pinned simple-icons package (CC0) in the same 256-unit tile shape.
+// Run: node scripts/build-skill-tiles.mjs
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import * as simpleIcons from "simple-icons";
+import { PER_LINE, STRIDE, unitsWidth, unitsHeight, pxWidth, pxHeight } from "./skill-geometry.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const data = JSON.parse(readFileSync(join(root, "scripts/profile-data.json"), "utf8"));
 
-const TILE = { light: "#F4F2ED", dark: "#242938" };
+const TILE_BG = { light: "#F4F2ED", dark: "#242938" };
 const LOGO_TARGET = 200;
-const GAP = 44;
 
-function iconFor(slug) {
-  const key = "si" + slug.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join("");
-  const icon = simpleIcons[key];
-  if (!icon) throw new Error(`simple-icons has no icon for slug "${slug}" (looked for ${key})`);
-  return icon;
+const SKILL_ICON_FILES = {
+  py: ["Python-Dark.svg", "Python-Light.svg"],
+  ts: ["TypeScript.svg", "TypeScript.svg"],
+  js: ["JavaScript.svg", "JavaScript.svg"],
+  java: ["Java-Dark.svg", "Java-Light.svg"],
+  go: ["GoLang.svg", "GoLang.svg"],
+  cpp: ["CPP.svg", "CPP.svg"],
+  cs: ["CS.svg", "CS.svg"],
+  dart: ["Dart-Dark.svg", "Dart-Light.svg"],
+  php: ["PHP-Dark.svg", "PHP-Light.svg"],
+  bash: ["Bash-Dark.svg", "Bash-Light.svg"],
+  pytorch: ["PyTorch-Dark.svg", "PyTorch-Light.svg"],
+  tensorflow: ["TensorFlow-Dark.svg", "TensorFlow-Light.svg"],
+  sklearn: ["ScikitLearn-Dark.svg", "SciKitLearn-Light.svg"],
+  opencv: ["OpenCV-Dark.svg", "OpenCV-Light.svg"],
+  react: ["React-Dark.svg", "React-Light.svg"],
+  nextjs: ["NextJS-Dark.svg", "NextJS-Light.svg"],
+  astro: ["Astro.svg", "Astro.svg"],
+  vue: ["VueJS-Dark.svg", "VueJS-Light.svg"],
+  nodejs: ["NodeJS-Dark.svg", "NodeJS-Light.svg"],
+  fastapi: ["FastAPI.svg", "FastAPI.svg"],
+  flask: ["Flask-Dark.svg", "Flask-Light.svg"],
+  tailwind: ["TailwindCSS-Dark.svg", "TailwindCSS-Light.svg"],
+  vite: ["Vite-Dark.svg", "Vite-Light.svg"],
+  flutter: ["Flutter-Dark.svg", "Flutter-Light.svg"],
+  firebase: ["Firebase-Dark.svg", "Firebase-Light.svg"],
+  unity: ["Unity-Dark.svg", "Unity-Light.svg"],
+  htmx: ["Htmx-Dark.svg", "Htmx-Light.svg"],
+  postgres: ["PostgreSQL-Dark.svg", "PostgreSQL-Light.svg"],
+  mysql: ["MySQL-Dark.svg", "MySQL-Light.svg"],
+  sqlite: ["SQLite.svg", "SQLite.svg"],
+  supabase: ["Supabase-Dark.svg", "Supabase-Light.svg"],
+  docker: ["Docker.svg", "Docker.svg"],
+  linux: ["Linux-Dark.svg", "Linux-Light.svg"],
+  ubuntu: ["Ubuntu-Dark.svg", "Ubuntu-Light.svg"],
+  arch: ["Arch-Dark.svg", "Arch-Light.svg"],
+  git: ["Git.svg", "Git.svg"],
+  githubactions: ["GithubActions-Dark.svg", "GithubActions-Light.svg"],
+  cloudflare: ["Cloudflare-Dark.svg", "Cloudflare-Light.svg"],
+  azure: ["Azure-Dark.svg", "Azure-Light.svg"],
+  nginx: ["Nginx.svg", "Nginx.svg"],
+  ansible: ["Ansible.svg", "Ansible.svg"],
+  grafana: ["Grafana-Dark.svg", "Grafana-Light.svg"],
+  prometheus: ["Prometheus.svg", "Prometheus.svg"],
+  arduino: ["Arduino.svg", "Arduino.svg"],
+  npm: ["Npm-Dark.svg", "Npm-Light.svg"],
+  pnpm: ["Pnpm-Dark.svg", "Pnpm-Light.svg"],
+  latex: ["LaTeX-Dark.svg", "LaTeX-Light.svg"],
+};
+
+const rowKey = (label) => label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+
+function svgInner(text) {
+  const open = text.indexOf(">");
+  const close = text.lastIndexOf("</svg>");
+  if (open < 0 || close < 0) throw new Error("not an svg file");
+  return text.slice(open + 1, close).trim();
+}
+
+function scopeIds(inner, prefix) {
+  return inner
+    .replace(/\bid="([^"]+)"/g, (_, id) => `id="${prefix}${id}"`)
+    .replace(/url\(#([^)]+)\)/g, (_, id) => `url(#${prefix}${id})`)
+    .replace(/([a-z:]*href)="#([^"]+)"/g, (_, attr, id) => `${attr}="#${prefix}${id}"`);
+}
+
+function glyphCell(item, theme) {
+  const files = SKILL_ICON_FILES[item.icon];
+  if (!files) throw new Error(`no vendored skill-icons file for id "${item.icon}"`);
+  const file = theme === "dark" ? files[0] : files[1];
+  const text = readFileSync(join(root, "assets/skills/icons", file), "utf8");
+  if (!/viewBox="0 0 256 256"/.test(text)) throw new Error(`${file} is not a 256 tile`);
+  return svgInner(text);
 }
 
 class Lexer {
@@ -266,65 +336,49 @@ function contrast(a, b) {
 
 const fmt = (n) => String(Math.round(n * 1000) / 1000);
 
-function tileSvg(theme, slug) {
-  const icon = iconFor(slug);
+function tileCell(theme, slug) {
+  const key = "si" + slug.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join("");
+  const icon = simpleIcons[key];
+  if (!icon) throw new Error(`simple-icons has no icon for slug "${slug}" (looked for ${key})`);
   const b = pathBounds(icon.path);
   const scale = LOGO_TARGET / Math.max(b.width, b.height);
   const tx = 128 - scale * (b.x + b.width / 2);
   const ty = 128 - scale * (b.y + b.height / 2);
-  const tile = TILE[theme];
+  const tile = TILE_BG[theme];
   const brand = `#${icon.hex}`;
   const fallback = theme === "dark" ? "#fff" : "#000";
   const fill = contrast(brand, tile) >= 3 ? brand : fallback;
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 256 256" fill="none">
-<rect width="256" height="256" fill="${tile}" rx="60"/>
-<path d="${icon.path}" fill="${fill}" transform="translate(${fmt(tx)} ${fmt(ty)}) scale(${fmt(scale)})"/>
-</svg>
-`;
+  return `<rect width="256" height="256" fill="${tile}" rx="60"/>
+<path d="${icon.path}" fill="${fill}" transform="translate(${fmt(tx)} ${fmt(ty)}) scale(${fmt(scale)})"/>`;
 }
 
-function tileInner(theme, slug) {
-  return tileSvg(theme, slug).replace(/^<svg[^>]*>\n/, "").replace(/<\/svg>\n$/, "");
-}
-
-function stripSvg(theme, rowKey, slugs) {
-  const lead = GAP;
-  const width = lead + slugs.length * 256 + (slugs.length - 1) * GAP;
-  const scale = 48 / 256;
-  const groups = slugs
-    .map((slug, idx) => {
-      const x = lead + idx * (256 + GAP);
-      return `    <g transform="translate(${x},0)">\n      <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none">\n  ${tileInner(theme, slug)}      </svg>\n    </g>`;
+function stripSvg(theme, key, items) {
+  const lines = Math.max(1, Math.ceil(items.length / PER_LINE));
+  const groups = items
+    .map((item, index) => {
+      const x = (index % PER_LINE) * STRIDE;
+      const y = Math.floor(index / PER_LINE) * STRIDE;
+      const cell = item.tile ? tileCell(theme, item.tile) : glyphCell(item, theme);
+      const scoped = scopeIds(cell, `${key}i${index}-`);
+      return `  <g transform="translate(${x} ${y})">\n    ${scoped}\n  </g>`;
     })
     .join("\n");
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${fmt(width * scale)}" height="48" viewBox="0 0 ${width} 256" fill="none">
+  return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${pxWidth}" height="${pxHeight(lines)}" viewBox="0 0 ${unitsWidth} ${unitsHeight(lines)}" fill="none">
 ${groups}
 </svg>
 `;
 }
 
-const rowKey = (label) => label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-
-mkdirSync(join(root, "assets/skills"), { recursive: true });
+mkdirSync(join(root, "assets/skills/rows"), { recursive: true });
 
 const summary = [];
 for (const row of data.readme.skills.rows) {
-  const tiles = row.items.filter((item) => item.tile);
-  if (!tiles.length) continue;
-  const slugs = tiles.map((item) => {
-    iconFor(item.tile);
-    return item.tile;
-  });
-  for (const slug of slugs) {
-    for (const theme of ["dark", "light"]) {
-      writeFileSync(join(root, `assets/skills/${slug}-${theme}.svg`), tileSvg(theme, slug));
-    }
-  }
   const key = rowKey(row.label);
   for (const theme of ["dark", "light"]) {
-    writeFileSync(join(root, `assets/skills/strip-${key}-${theme}.svg`), stripSvg(theme, key, slugs));
+    writeFileSync(join(root, `assets/skills/rows/${key}-${theme}.svg`), stripSvg(theme, key, row.items));
   }
-  summary.push(`${row.label}: ${slugs.join(", ")}`);
+  summary.push(`${row.label}: ${row.items.length} icons, ${Math.max(1, Math.ceil(row.items.length / PER_LINE))} line(s)`);
 }
 
-console.log(summary.map((line) => `tiles: ${line}`).join("\n"));
+console.log(summary.map((line) => `rows: ${line}`).join("\n"));
+console.log(`row width: ${pxWidth} px for every row`);

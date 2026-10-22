@@ -1,12 +1,29 @@
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/banner-dark-narrow.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/banner-light-narrow.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img alt="Mert Kaya, senior AI engineer and founder of Eschatia Labs" src="assets/banner-dark.svg" width="880">
-</picture>
+I'm a senior AI engineer at Enocta and the founder of [Eschatia Labs](https://eschatialabs.com), an independent, non-profit open-source AI research lab. I build small models that run on a laptop, agents you can inspect and detectors that show their evidence.
 
-Senior AI engineer and founder of [Eschatia Labs](https://eschatialabs.com), an independent, non-profit open-source AI research lab: a small collective of researchers who publish their preprints, release their models on Hugging Face and keep their code open source. I build small models that run on a laptop, agents you can inspect and detectors that show their evidence.
+## Career
+
+<table>
+  <tr>
+    <td>Since 2025</td>
+    <td><b>Senior AI Engineer</b>, Enocta. Assistants that answer from company documents (RAG), an agentic customer-success workflow, role-play training simulations.</td>
+  </tr>
+  <tr>
+    <td>2023-2024</td>
+    <td><b>Full-stack Engineer</b>, Credit Bureau of Turkey (KKB). Financial software used across the Turkish banking sector: backend, mobile and system design.</td>
+  </tr>
+  <tr>
+    <td>2022-2023</td>
+    <td><b>AI and Full-stack Engineer</b> (contract), AgriDL5.0. Models that predict growing conditions in vertical farms, plus the Flutter app on top.</td>
+  </tr>
+  <tr>
+    <td>2021-2022</td>
+    <td><b>Backend and Data Engineer</b>, Alictus. Moved internal tools to the cloud with Go and Azure.</td>
+  </tr>
+  <tr>
+    <td>2019-2021</td>
+    <td><b>Internships</b>, SimBT, BiSoft and Roar Games Studio. Defence technology software, an NLTK and Neo4j chatbot before LLMs, Unity and C# games.</td>
+  </tr>
+</table>
 
 ## Projects
 
@@ -37,43 +54,45 @@ Senior AI engineer and founder of [Eschatia Labs](https://eschatialabs.com), an 
   </tr>
 </table>
 
-Counts as of 22 October 2026. In total: 9,775 downloads of my AI models and datasets on Hugging Face and 9,982 downloads of my npm packages.
+Download counts from 22 October 2026: 9,775 for my models and datasets on Hugging Face and 9,982 for my npm packages.
 
-## Skills
+## Stack
 
 <table>
   <tr>
     <td>Languages</td>
-    <td><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py%2Cts%2Cjs%2Cjava%2Cgo%2Ccpp%2Ccs%2Cdart%2Cphp%2Cbash&theme=dark"><img alt="Python, TypeScript, JavaScript, Java, Go, C++, C#, Dart, PHP, Bash" src="https://skillicons.dev/icons?i=py,ts,js,java,go,cpp,cs,dart,php,bash&theme=light" width="554"></picture></td>
+    <td><picture><source media="(prefers-color-scheme: dark)" srcset="assets/skills/rows/languages-dark.svg"><img alt="Python, TypeScript, JavaScript, Java, Go, C++, C#, Dart, PHP, Bash" src="assets/skills/rows/languages-light.svg" width="442"></picture></td>
   </tr>
   <tr>
     <td>AI and data</td>
-    <td><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=pytorch%2Ctensorflow%2Csklearn%2Copencv&theme=dark"><img alt="PyTorch, TensorFlow, scikit-learn, OpenCV" src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,opencv&theme=light" width="217"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="assets/skills/strip-ai-and-data-dark.svg"><img alt="Keras, Hugging Face, Jupyter, Kaggle, Ollama, Gradio, Streamlit" src="assets/skills/strip-ai-and-data-light.svg" width="394"></picture></td>
+    <td><picture><source media="(prefers-color-scheme: dark)" srcset="assets/skills/rows/ai-and-data-dark.svg"><img alt="PyTorch, TensorFlow, Keras, Hugging Face, scikit-learn, OpenCV, Jupyter, Kaggle, Ollama, Gradio, Streamlit" src="assets/skills/rows/ai-and-data-light.svg" width="442"></picture></td>
   </tr>
   <tr>
     <td>Web, apps and games</td>
-    <td><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react%2Cnextjs%2Castro%2Cvue%2Cnodejs%2Cfastapi%2Cflask%2Ctailwind%2Cvite%2Cflutter%2Cfirebase%2Cunity%2Chtmx&theme=dark"><img alt="React, Next.js, Astro, Vue.js, Node.js, FastAPI, Flask, Tailwind CSS, Vite, Flutter, Firebase, Unity, htmx" src="https://skillicons.dev/icons?i=react,nextjs,astro,vue,nodejs,fastapi,flask,tailwind,vite,flutter,firebase,unity,htmx&theme=light" width="723"></picture></td>
+    <td><picture><source media="(prefers-color-scheme: dark)" srcset="assets/skills/rows/web-apps-and-games-dark.svg"><img alt="React, Next.js, Astro, Vue.js, Node.js, FastAPI, Flask, Tailwind CSS, Vite, Flutter, Firebase, Unity, htmx" src="assets/skills/rows/web-apps-and-games-light.svg" width="442"></picture></td>
   </tr>
   <tr>
     <td>Databases</td>
-    <td><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=postgres%2Cmysql%2Csqlite%2Csupabase&theme=dark"><img alt="PostgreSQL, MySQL, SQLite, Supabase" src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,supabase&theme=light" width="217"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="assets/skills/strip-databases-dark.svg"><img alt="Neo4j" src="assets/skills/strip-databases-light.svg" width="56"></picture></td>
+    <td><picture><source media="(prefers-color-scheme: dark)" srcset="assets/skills/rows/databases-dark.svg"><img alt="PostgreSQL, MySQL, SQLite, Neo4j, Supabase" src="assets/skills/rows/databases-light.svg" width="442"></picture></td>
   </tr>
   <tr>
     <td>Infrastructure and tools</td>
-    <td><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=docker%2Clinux%2Cubuntu%2Carch%2Cgit%2Cgithubactions%2Ccloudflare%2Cazure%2Cnginx%2Cansible%2Cgrafana%2Cprometheus%2Carduino%2Cnpm%2Cpnpm%2Clatex&perline=8&theme=dark"><img alt="Docker, Linux, Ubuntu, Arch, Git, GitHub Actions, Cloudflare, Azure, Nginx, Ansible, Grafana, Prometheus, Arduino, npm, pnpm, LaTeX" src="https://skillicons.dev/icons?i=docker,linux,ubuntu,arch,git,githubactions,cloudflare,azure,nginx,ansible,grafana,prometheus,arduino,npm,pnpm,latex&perline=8&theme=light" width="442"></picture></td>
+    <td><picture><source media="(prefers-color-scheme: dark)" srcset="assets/skills/rows/infrastructure-and-tools-dark.svg"><img alt="Docker, Linux, Ubuntu, Arch, Git, GitHub Actions, Cloudflare, Azure, Nginx, Ansible, Grafana, Prometheus, Arduino, npm, pnpm, LaTeX" src="assets/skills/rows/infrastructure-and-tools-light.svg" width="442"></picture></td>
   </tr>
 </table>
 
 Also: SQL, NLTK, Weaviate.
-
-With them I fine-tune and evaluate small models (JevAlt, Tholos-2B, JevOss), explain detectors with Grad-CAM (xdfdet) and build agents and MCP servers (reevesagents, Tholos).
 
 ## Education and research
 
 <table>
   <tr>
     <td><b>MSc Computer Science</b></td>
-    <td>TED University, 2023-2025, full merit scholarship. Thesis: <a href="https://doi.org/10.5281/zenodo.18998566">Explainable deepfake detection using frame level CNN models: A comparative study of augmentation and cutout techniques</a>, advised by Venera Adanova.</td>
+    <td>TED University, 2023-2025, full merit scholarship. Thesis: <a href="https://doi.org/10.5281/zenodo.18998566">Explainable deepfake detection using frame level CNN models: A comparative study of augmentation and cutout techniques</a>, advised by Professor Venera Adanova.</td>
+  </tr>
+  <tr>
+    <td><b>MSc Computer Science and AI</b></td>
+    <td>IU International University of Applied Sciences, 2022-2023, full scholarship, remote. One year before I moved to TED University.</td>
   </tr>
   <tr>
     <td><b>BSc Computer Engineering</b></td>
@@ -81,17 +100,26 @@ With them I fine-tune and evaluate small models (JevAlt, Tholos-2B, JevOss), exp
   </tr>
   <tr>
     <td><b>UBMK 2026 (IEEE)</b></td>
-    <td><a href="https://mertkayacs.com/research/">Augmentation and Cutout in Deepfake Detection: A Comparative Study of Accuracy, Calibration, and Attention</a>, with Venera Adanova. Presented at the 11th International Conference on Computer Science and Engineering in Istanbul, September 2026. To appear in IEEE Xplore.</td>
+    <td><a href="https://mertkayacs.com/research/">Augmentation and Cutout in Deepfake Detection: A Comparative Study of Accuracy, Calibration, and Attention</a>, with Professor Venera Adanova. Presented at the 11th International Conference on Computer Science and Engineering in Istanbul, September 2026. To appear in IEEE Xplore.</td>
   </tr>
 </table>
 
 ## Open source
 
-My code ships in <a href="https://github.com/morluto/rea/releases/tag/rea-agents-6.6.0"><img src="assets/logos/rea.png" height="16" alt="" align="absmiddle"> rea 6.6.0</a>, <a href="https://github.com/NousResearch/hermes-agent/pull/138650"><img src="assets/logos/hermes-agent.png" height="16" alt="" align="absmiddle"> Hermes Agent</a>, <a href="https://github.com/musistudio/claude-code-router/pull/1871"><img src="assets/logos/claude-code-router.png" height="16" alt="" align="absmiddle"> Claude Code Router</a>, <a href="https://github.com/jarrodwatts/claude-hud/pull/802"><img src="assets/logos/claude-hud.png" height="16" alt="" align="absmiddle"> Claude HUD</a>, <a href="https://github.com/sirmalloc/ccstatusline/pull/695"><img src="assets/logos/ccstatusline.png" height="16" alt="" align="absmiddle"> ccstatusline</a>, <a href="https://github.com/realiti4/claude-swap/pull/442"><img src="assets/logos/claude-swap.png" height="16" alt="" align="absmiddle"> claude-swap</a> and <a href="https://github.com/academa-labs/manimgx/pulls?q=is%3Apr+author%3Amertkayacs+is%3Amerged"><img src="assets/logos/manimgx.png" height="16" alt="" align="absmiddle"> ManimGX</a>.<br>
-In review at <a href="https://github.com/ollama/ollama/pulls?q=is%3Apr+author%3Amertkayacs"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logos/ollama-on-dark.png"><img src="assets/logos/ollama.png" height="16" alt="" align="absmiddle"></picture> Ollama</a>, <a href="https://github.com/huggingface/datasets/pulls?q=is%3Apr+author%3Amertkayacs"><img src="assets/logos/hf-datasets.png" height="16" alt="" align="absmiddle"> Hugging Face datasets</a>, <a href="https://github.com/sgl-project/sglang/pull/43377"><img src="assets/logos/sglang.png" height="16" alt="" align="absmiddle"> SGLang</a>, <a href="https://github.com/QwenLM/qwen-code/pull/15144"><img src="assets/logos/qwen-code.png" height="16" alt="" align="absmiddle"> Qwen Code</a>, <a href="https://github.com/EleutherAI/lm-evaluation-harness/pull/4346"><img src="assets/logos/lm-eval.png" height="16" alt="" align="absmiddle"> LM Evaluation Harness</a> and the <a href="https://github.com/anthropics/claude-agent-sdk-python/pull/1427"><img src="assets/logos/claude-agent-sdk.png" height="16" alt="" align="absmiddle"> Claude Agent SDK</a>.<br>
-11 merged, 6 credited, 20 in review as of 22 October 2026. [Every pull request](https://mertkayacs.com/open-source/)
+<table>
+  <tr>
+    <td>Merged</td>
+    <td><a href="https://github.com/morluto/rea/releases/tag/rea-agents-6.6.0" title="Credited: my fixes landed on main with co-author credit, and the 6.6.0 release notes thank me"><img src="assets/logos/rea.png" height="16" alt="" align="absmiddle"> rea</a>, <a href="https://github.com/NousResearch/hermes-agent/pull/138650" title="Credited: a maintainer's merged pull request ships my plugin fixes and names me"><img src="assets/logos/hermes-agent.png" height="16" alt="" align="absmiddle"> Hermes Agent</a>, <a href="https://github.com/musistudio/claude-code-router/pull/1871"><img src="assets/logos/claude-code-router.png" height="16" alt="" align="absmiddle"> Claude Code Router</a>, <a href="https://github.com/jarrodwatts/claude-hud/pull/802"><img src="assets/logos/claude-hud.png" height="16" alt="" align="absmiddle"> Claude HUD</a>, <a href="https://github.com/sirmalloc/ccstatusline/pull/695"><img src="assets/logos/ccstatusline.png" height="16" alt="" align="absmiddle"> ccstatusline</a>, <a href="https://github.com/realiti4/claude-swap/pull/442"><img src="assets/logos/claude-swap.png" height="16" alt="" align="absmiddle"> claude-swap</a>, <a href="https://github.com/academa-labs/manimgx/pulls?q=is%3Apr+author%3Amertkayacs+is%3Amerged"><img src="assets/logos/manimgx.png" height="16" alt="" align="absmiddle"> ManimGX</a></td>
+  </tr>
+  <tr>
+    <td>In progress</td>
+    <td><a href="https://github.com/ollama/ollama/pulls?q=is%3Apr+author%3Amertkayacs"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logos/ollama-on-dark.png"><img src="assets/logos/ollama.png" height="16" alt="" align="absmiddle"></picture> Ollama</a>, <a href="https://github.com/huggingface/datasets/pulls?q=is%3Apr+author%3Amertkayacs"><img src="assets/logos/hf-datasets.png" height="16" alt="" align="absmiddle"> Hugging Face datasets</a>, <a href="https://github.com/sgl-project/sglang/pull/43377"><img src="assets/logos/sglang.png" height="16" alt="" align="absmiddle"> SGLang</a>, <a href="https://github.com/QwenLM/qwen-code/pull/15144"><img src="assets/logos/qwen-code.png" height="16" alt="" align="absmiddle"> Qwen Code</a>, <a href="https://github.com/EleutherAI/lm-evaluation-harness/pull/4346"><img src="assets/logos/lm-eval.png" height="16" alt="" align="absmiddle"> LM Evaluation Harness</a>, <a href="https://github.com/anthropics/claude-agent-sdk-python/pull/1427"><img src="assets/logos/claude-agent-sdk.png" height="16" alt="" align="absmiddle"> Claude Agent SDK</a>, <a href="https://github.com/openai/codex/issues/56057"><img src="assets/logos/codex.png" height="16" alt="" align="absmiddle"> Codex</a>, <a href="https://github.com/deepseek-ai/deepseek-harness/issues/10604"><img src="assets/logos/deepseek-harness.png" height="16" alt="" align="absmiddle"> DeepSeek Harness</a>, <a href="https://github.com/MoonshotAI/kimi-code/issues/4324"><img src="assets/logos/kimi-code.png" height="16" alt="" align="absmiddle"> Kimi Code</a></td>
+  </tr>
+</table>
 
-## GitHub activity
+The full list is on [mertkayacs.com/open-source](https://mertkayacs.com/open-source/).
+
+## Activity
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mertkayacs/mertkayacs/cards/contrib-dark.svg">

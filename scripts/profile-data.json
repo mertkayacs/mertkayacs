@@ -1,12 +1,28 @@
 {
-  "banner": {
-    "name": "Mert Kaya",
-    "role": "Senior AI engineer. Founder of Eschatia Labs."
-  },
   "readme": {
-    "bannerAlt": "Mert Kaya, senior AI engineer and founder of Eschatia Labs",
-    "bannerWidth": 880,
-    "intro": "Senior AI engineer and founder of [Eschatia Labs](https://eschatialabs.com), an independent, non-profit open-source AI research lab: a small collective of researchers who publish their preprints, release their models on Hugging Face and keep their code open source. I build small models that run on a laptop, agents you can inspect and detectors that show their evidence.",
+    "intro": "I'm a senior AI engineer at Enocta and the founder of [Eschatia Labs](https://eschatialabs.com), an independent, non-profit open-source AI research lab. I build small models that run on a laptop, agents you can inspect and detectors that show their evidence.",
+    "career": [
+      {
+        "when": "Since 2025",
+        "role": "<b>Senior AI Engineer</b>, Enocta. Assistants that answer from company documents (RAG), an agentic customer-success workflow, role-play training simulations."
+      },
+      {
+        "when": "2023-2024",
+        "role": "<b>Full-stack Engineer</b>, Credit Bureau of Turkey (KKB). Financial software used across the Turkish banking sector: backend, mobile and system design."
+      },
+      {
+        "when": "2022-2023",
+        "role": "<b>AI and Full-stack Engineer</b> (contract), AgriDL5.0. Models that predict growing conditions in vertical farms, plus the Flutter app on top."
+      },
+      {
+        "when": "2021-2022",
+        "role": "<b>Backend and Data Engineer</b>, Alictus. Moved internal tools to the cloud with Go and Azure."
+      },
+      {
+        "when": "2019-2021",
+        "role": "<b>Internships</b>, SimBT, BiSoft and Roar Games Studio. Defence technology software, an NLTK and Neo4j chatbot before LLMs, Unity and C# games."
+      }
+    ],
     "projects": [
       {
         "name": "Emberwick",
@@ -39,7 +55,7 @@
         "text": "The all-in-one mod pack for Claude Code. 2.2k npm downloads a month."
       }
     ],
-    "projectsCounts": "Counts as of 22 October 2026. In total: 9,775 downloads of my AI models and datasets on Hugging Face and 9,982 downloads of my npm packages.",
+    "projectsCounts": "Download counts from 22 October 2026: 9,775 for my models and datasets on Hugging Face and 9,982 for my npm packages.",
     "skills": {
       "rows": [
         {
@@ -103,7 +119,6 @@
         },
         {
           "label": "Infrastructure and tools",
-          "perline": 8,
           "items": [
             { "name": "Docker", "icon": "docker" },
             { "name": "Linux", "icon": "linux" },
@@ -124,13 +139,16 @@
           ]
         }
       ],
-      "also": ["SQL", "NLTK", "Weaviate"],
-      "note": "With them I fine-tune and evaluate small models (JevAlt, Tholos-2B, JevOss), explain detectors with Grad-CAM (xdfdet) and build agents and MCP servers (reevesagents, Tholos)."
+      "also": ["SQL", "NLTK", "Weaviate"]
     },
     "education": [
       {
         "title": "MSc Computer Science",
-        "text": "TED University, 2023-2025, full merit scholarship. Thesis: <a href=\"https://doi.org/10.5281/zenodo.18998566\">Explainable deepfake detection using frame level CNN models: A comparative study of augmentation and cutout techniques</a>, advised by Venera Adanova."
+        "text": "TED University, 2023-2025, full merit scholarship. Thesis: <a href=\"https://doi.org/10.5281/zenodo.18998566\">Explainable deepfake detection using frame level CNN models: A comparative study of augmentation and cutout techniques</a>, advised by Professor Venera Adanova."
+      },
+      {
+        "title": "MSc Computer Science and AI",
+        "text": "IU International University of Applied Sciences, 2022-2023, full scholarship, remote. One year before I moved to TED University."
       },
       {
         "title": "BSc Computer Engineering",
@@ -138,13 +156,98 @@
       },
       {
         "title": "UBMK 2026 (IEEE)",
-        "text": "<a href=\"https://mertkayacs.com/research/\">Augmentation and Cutout in Deepfake Detection: A Comparative Study of Accuracy, Calibration, and Attention</a>, with Venera Adanova. Presented at the 11th International Conference on Computer Science and Engineering in Istanbul, September 2026. To appear in IEEE Xplore."
+        "text": "<a href=\"https://mertkayacs.com/research/\">Augmentation and Cutout in Deepfake Detection: A Comparative Study of Accuracy, Calibration, and Attention</a>, with Professor Venera Adanova. Presented at the 11th International Conference on Computer Science and Engineering in Istanbul, September 2026. To appear in IEEE Xplore."
       }
     ],
     "openSource": {
-      "ships": "My code ships in <a href=\"https://github.com/morluto/rea/releases/tag/rea-agents-6.6.0\"><img src=\"assets/logos/rea.png\" height=\"16\" alt=\"\" align=\"absmiddle\"> rea 6.6.0</a>, <a href=\"https://github.com/NousResearch/hermes-agent/pull/138650\"><img src=\"assets/logos/hermes-agent.png\" height=\"16\" alt=\"\" align=\"absmiddle\"> Hermes Agent</a>, <a href=\"https://github.com/musistudio/claude-code-router/pull/1871\"><img src=\"assets/logos/claude-code-router.png\" height=\"16\" alt=\"\" align=\"absmiddle\"> Claude Code Router</a>, <a href=\"https://github.com/jarrodwatts/claude-hud/pull/802\"><img src=\"assets/logos/claude-hud.png\" height=\"16\" alt=\"\" align=\"absmiddle\"> Claude HUD</a>, <a href=\"https://github.com/sirmalloc/ccstatusline/pull/695\"><img src=\"assets/logos/ccstatusline.png\" height=\"16\" alt=\"\" align=\"absmiddle\"> ccstatusline</a>, <a href=\"https://github.com/realiti4/claude-swap/pull/442\"><img src=\"assets/logos/claude-swap.png\" height=\"16\" alt=\"\" align=\"absmiddle\"> claude-swap</a> and <a href=\"https://github.com/academa-labs/manimgx/pulls?q=is%3Apr+author%3Amertkayacs+is%3Amerged\"><img src=\"assets/logos/manimgx.png\" height=\"16\" alt=\"\" align=\"absmiddle\"> ManimGX</a>.",
-      "review": "In review at <a href=\"https://github.com/ollama/ollama/pulls?q=is%3Apr+author%3Amertkayacs\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/logos/ollama-on-dark.png\"><img src=\"assets/logos/ollama.png\" height=\"16\" alt=\"\" align=\"absmiddle\"></picture> Ollama</a>, <a href=\"https://github.com/huggingface/datasets/pulls?q=is%3Apr+author%3Amertkayacs\"><img src=\"assets/logos/hf-datasets.png\" height=\"16\" alt=\"\" align=\"absmiddle\"> Hugging Face datasets</a>, <a href=\"https://github.com/sgl-project/sglang/pull/43377\"><img src=\"assets/logos/sglang.png\" height=\"16\" alt=\"\" align=\"absmiddle\"> SGLang</a>, <a href=\"https://github.com/QwenLM/qwen-code/pull/15144\"><img src=\"assets/logos/qwen-code.png\" height=\"16\" alt=\"\" align=\"absmiddle\"> Qwen Code</a>, <a href=\"https://github.com/EleutherAI/lm-evaluation-harness/pull/4346\"><img src=\"assets/logos/lm-eval.png\" height=\"16\" alt=\"\" align=\"absmiddle\"> LM Evaluation Harness</a> and the <a href=\"https://github.com/anthropics/claude-agent-sdk-python/pull/1427\"><img src=\"assets/logos/claude-agent-sdk.png\" height=\"16\" alt=\"\" align=\"absmiddle\"> Claude Agent SDK</a>.",
-      "counts": "11 merged, 6 credited, 20 in review as of 22 October 2026. [Every pull request](https://mertkayacs.com/open-source/)"
+      "merged": [
+        {
+          "name": "rea",
+          "href": "https://github.com/morluto/rea/releases/tag/rea-agents-6.6.0",
+          "logo": "rea.png",
+          "title": "Credited: my fixes landed on main with co-author credit, and the 6.6.0 release notes thank me"
+        },
+        {
+          "name": "Hermes Agent",
+          "href": "https://github.com/NousResearch/hermes-agent/pull/138650",
+          "logo": "hermes-agent.png",
+          "title": "Credited: a maintainer's merged pull request ships my plugin fixes and names me"
+        },
+        {
+          "name": "Claude Code Router",
+          "href": "https://github.com/musistudio/claude-code-router/pull/1871",
+          "logo": "claude-code-router.png"
+        },
+        {
+          "name": "Claude HUD",
+          "href": "https://github.com/jarrodwatts/claude-hud/pull/802",
+          "logo": "claude-hud.png"
+        },
+        {
+          "name": "ccstatusline",
+          "href": "https://github.com/sirmalloc/ccstatusline/pull/695",
+          "logo": "ccstatusline.png"
+        },
+        {
+          "name": "claude-swap",
+          "href": "https://github.com/realiti4/claude-swap/pull/442",
+          "logo": "claude-swap.png"
+        },
+        {
+          "name": "ManimGX",
+          "href": "https://github.com/academa-labs/manimgx/pulls?q=is%3Apr+author%3Amertkayacs+is%3Amerged",
+          "logo": "manimgx.png"
+        }
+      ],
+      "inProgress": [
+        {
+          "name": "Ollama",
+          "href": "https://github.com/ollama/ollama/pulls?q=is%3Apr+author%3Amertkayacs",
+          "logo": "ollama.png",
+          "logoDark": "ollama-on-dark.png"
+        },
+        {
+          "name": "Hugging Face datasets",
+          "href": "https://github.com/huggingface/datasets/pulls?q=is%3Apr+author%3Amertkayacs",
+          "logo": "hf-datasets.png"
+        },
+        {
+          "name": "SGLang",
+          "href": "https://github.com/sgl-project/sglang/pull/43377",
+          "logo": "sglang.png"
+        },
+        {
+          "name": "Qwen Code",
+          "href": "https://github.com/QwenLM/qwen-code/pull/15144",
+          "logo": "qwen-code.png"
+        },
+        {
+          "name": "LM Evaluation Harness",
+          "href": "https://github.com/EleutherAI/lm-evaluation-harness/pull/4346",
+          "logo": "lm-eval.png"
+        },
+        {
+          "name": "Claude Agent SDK",
+          "href": "https://github.com/anthropics/claude-agent-sdk-python/pull/1427",
+          "logo": "claude-agent-sdk.png"
+        },
+        {
+          "name": "Codex",
+          "href": "https://github.com/openai/codex/issues/56057",
+          "logo": "codex.png"
+        },
+        {
+          "name": "DeepSeek Harness",
+          "href": "https://github.com/deepseek-ai/deepseek-harness/issues/10604",
+          "logo": "deepseek-harness.png"
+        },
+        {
+          "name": "Kimi Code",
+          "href": "https://github.com/MoonshotAI/kimi-code/issues/4324",
+          "logo": "kimi-code.png"
+        }
+      ],
+      "more": "The full list is on [mertkayacs.com/open-source](https://mertkayacs.com/open-source/)."
     },
     "activity": {
       "contrib": {
