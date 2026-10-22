@@ -1,20 +1,10 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img alt="Mert Kaya, senior AI researcher and AI architect" src="assets/banner-dark.svg" width="880">
+  <img alt="Mert Kaya, Senior AI engineer. Founder of Eschatia Labs." src="assets/banner-dark.svg" width="880">
 </picture>
 
-Founder of [Eschatia Labs](https://eschatialabs.com), an independent, non-profit open-source AI research lab. I build open tools and small models, and I fix the libraries I rely on.
-
-## Open source
-
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/oss-dark-narrow.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/oss-light-narrow.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/oss-light.svg">
-  <img alt="Open-source contributions as of 2026-10-22: 10 merged and 21 in review in other people's projects, 4 more landed with credit, 3 bug reports with fixes, and listings in 16 curated lists" src="assets/oss-dark.svg" width="880">
-</picture>
+I build agent tooling, small open models and explainable deepfake detection, and I fix the libraries I rely on.
 
 ## Projects
 
@@ -27,6 +17,16 @@ Founder of [Eschatia Labs](https://eschatialabs.com), an independent, non-profit
 </picture>
 
 [reevesagents](https://github.com/mertkayacs/reevesagents) | [xdfdet](https://github.com/mertkayacs/xdfdet) | [tholos](https://github.com/mertkayacs/tholos) | [jevalt](https://github.com/mertkayacs/jevalt) | [jevoss](https://github.com/mertkayacs/jevoss) | [ultramod](https://github.com/mertkayacs/ultramod)
+
+## Open source
+
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/oss-dark-narrow.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/oss-light-narrow.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/oss-light.svg">
+  <img alt="Open-source contributions as of 2026-10-22: 10 merged and 21 in review in other people's projects, 4 more landed with credit, 3 bug reports with fixes, and listings in 16 curated lists" src="assets/oss-dark.svg" width="880">
+</picture>
 
 ## Links
 

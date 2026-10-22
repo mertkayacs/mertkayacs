@@ -2,7 +2,7 @@
  "as_of": "2026-10-22",
  "banner": {
   "name": "Mert Kaya",
-  "role": "Senior AI researcher and AI architect"
+  "role": "Senior AI engineer. Founder of Eschatia Labs."
  },
  "oss": {
   "cards": [
@@ -56,7 +56,7 @@
    },
    {
     "title": "NousResearch Hermes",
-    "desc": "Plugin fixes merged; agent fixes in review.",
+    "desc": "Plugin fixes merged; agent fixes pending.",
     "pills": [
      {
       "text": "2 merged",
@@ -70,7 +70,7 @@
    },
    {
     "title": "Claude Code tooling",
-    "desc": "Token leak, cost ledger and temp-file fixes.",
+    "desc": "Token, cost-ledger and temp-file fixes.",
     "pills": [
      {
       "text": "4 merged",
@@ -80,7 +80,7 @@
    },
    {
     "title": "AI coding CLIs",
-    "desc": "Qwen Code and Claude SDK fixes; Kimi, Codex, DeepSeek reports.",
+    "desc": "Qwen, Claude fixes; three CLI reports.",
     "pills": [
      {
       "text": "2 in review",
@@ -94,7 +94,7 @@
    },
    {
     "title": "Curated lists and catalogs",
-    "desc": "reevesagents, Tholos, JevAlt, JevOss and Ultra Mod listed.",
+    "desc": "Five tools listed in curated catalogs.",
     "pills": [
      {
       "text": "22 merged",

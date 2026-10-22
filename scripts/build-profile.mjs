@@ -8,6 +8,7 @@ import { fileURLToPath } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const data = JSON.parse(readFileSync(join(root, "scripts/profile-data.json"), "utf8"));
 mkdirSync(join(root, "assets"), { recursive: true });
+const bustData = readFileSync(join(root, "assets/bust-420.png")).toString("base64");
 
 const W = 880;
 const FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif";
@@ -19,82 +20,55 @@ const fitPx = (s, px, max) => { let p = px; while (estW(s, p) > max && p > 10) p
 const THEMES = {
   dark: {
     suffix: "dark",
-    stage1: "#1a1330", stage2: "#2b2148", stage3: "#43335e", stageBorder: "#403468",
-    card: "#1b1530", cardBorder: "#352a55",
-    title: "#f2eefb", desc: "#bfb6da", muted: "#8d84ad", stat: "#a79dc6",
+    stage1: "#0b0b0f", stage2: "#141418", stage3: "#1d1d22", stageBorder: "#26262c",
+    card: "#141418", cardBorder: "#2d2d33",
+    title: "#f5f5f7", desc: "#b8b8c0", muted: "#898992", stat: "#a7a7b0",
     merged: "#f3c7a0", open: "#b98aa8", landed: "#b7a5ec",
-    glow1: "#b98aa8", glow2: "#f3c7a0",
+    glow1: "#b98aa8", glow2: "#f3c7a0", bannerTitle: "#f5f5f7", bannerDesc: "#b8b8c0", bannerGlowOpacity: ".16",
   },
   light: {
     suffix: "light",
-    stage1: "#1a1330", stage2: "#2b2148", stage3: "#43335e", stageBorder: "#d6cde6",
-    card: "#f8f5fd", cardBorder: "#e0d7ef",
-    title: "#262040", desc: "#4e4768", muted: "#7a7194", stat: "#6f648e",
+    stage1: "#f5f5f7", stage2: "#ededf0", stage3: "#e5e5e9", stageBorder: "#d8d8dd",
+    card: "#fbfbfc", cardBorder: "#dedee3",
+    title: "#1d1d22", desc: "#4f4f57", muted: "#777780", stat: "#686870",
     merged: "#a05a24", open: "#8a5470", landed: "#6a55a8",
-    glow1: "#b98aa8", glow2: "#f3c7a0",
+    glow1: "#b98aa8", glow2: "#f3c7a0", bannerTitle: "#16161a", bannerDesc: "#55555d", bannerGlowOpacity: ".09",
   },
 };
 
-// rounded five-point star path (chibi proportions), centered at cx,cy
-function starPath(cx, cy, R, r, rot = -Math.PI / 2) {
-  const pts = [];
-  for (let i = 0; i < 10; i++) {
-    const rad = i % 2 === 0 ? R : r;
-    const a = rot + (i * Math.PI) / 5;
-    pts.push([cx + rad * Math.cos(a), cy + rad * Math.sin(a)]);
-  }
-  const round = R * 0.28;
-  let d = "";
-  for (let i = 0; i < 10; i++) {
-    const p = pts[i], q = pts[(i + 1) % 10], s = pts[(i + 9) % 10];
-    const len = Math.hypot(q[0] - p[0], q[1] - p[1]);
-    const lenS = Math.hypot(p[0] - s[0], p[1] - s[1]);
-    const t = Math.min(round / len, 0.45), tS = Math.min(round / lenS, 0.45);
-    const inP = [p[0] + (s[0] - p[0]) * tS, p[1] + (s[1] - p[1]) * tS];
-    const outP = [p[0] + (q[0] - p[0]) * t, p[1] + (q[1] - p[1]) * t];
-    d += (i === 0 ? `M${inP[0].toFixed(1)} ${inP[1].toFixed(1)}` : `L${inP[0].toFixed(1)} ${inP[1].toFixed(1)}`);
-    d += `Q${p[0].toFixed(1)} ${p[1].toFixed(1)} ${outP[0].toFixed(1)} ${outP[1].toFixed(1)}`;
-  }
-  return d + "Z";
-}
-const sparklePath = (cx, cy, r) =>
-  `M${cx} ${cy - r}Q${cx + r * 0.18} ${cy - r * 0.18} ${cx + r} ${cy}Q${cx + r * 0.18} ${cy + r * 0.18} ${cx} ${cy + r}Q${cx - r * 0.18} ${cy + r * 0.18} ${cx - r} ${cy}Q${cx - r * 0.18} ${cy - r * 0.18} ${cx} ${cy - r}Z`;
-
-function svgDoc(w, h, label, body, extraStyle = "") {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" fill="none" role="img" aria-label="${esc(label)}">
-<style>@media (prefers-reduced-motion: no-preference){.float{animation:float 7s ease-in-out infinite}.tw{animation:tw 5s ease-in-out infinite}}@keyframes float{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-10px) rotate(3deg)}}@keyframes tw{0%,100%{opacity:.15}50%{opacity:.75}}.float,.tw{transform-box:fill-box;transform-origin:center}${extraStyle}</style>
+function svgDoc(w, h, label, body) {
+  return `<svg xmlns="&#104;ttp://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" fill="none" role="img" aria-label="${esc(label)}">
 ${body}</svg>
 `;
 }
 
 function banner(t) {
-  const sparkles = [
-    [86, 52, 5, 0], [180, 196, 4, 1.4], [320, 66, 6, 0.8], [468, 150, 4, 2.2],
-    [560, 60, 3.5, 1.1], [628, 208, 5, 0.4], [806, 76, 4, 1.8], [760, 216, 3, 2.6],
-  ].map(([x, y, r, dl]) => `<path class="tw" style="animation-delay:${dl}s" d="${sparklePath(x, y, r)}" fill="${t.glow2}"/>`).join("");
-  const star = `
-<g class="float">
-  <path d="${starPath(706, 128, 64, 40)}" fill="#f5f1fb" stroke="#16121f" stroke-width="6.5" stroke-linejoin="round"/>
-  <circle cx="686" cy="122" r="4.6" fill="#16121f"/>
-  <circle cx="726" cy="122" r="4.6" fill="#16121f"/>
-  <path d="M696 141Q701 146.5 706 141.5Q711 136.5 716 141.5Q721 146.5 726 140" stroke="#16121f" stroke-width="3.6" stroke-linecap="round" fill="none"/>
-</g>`;
   const body = `
 <defs>
-  <linearGradient id="dusk-${t.suffix}" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="${t.stage1}"/><stop offset=".52" stop-color="${t.stage2}"/><stop offset="1" stop-color="${t.stage3}"/>
-  </linearGradient>
-  <radialGradient id="glow-${t.suffix}" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(706 218) scale(320 130)">
-    <stop offset="0" stop-color="${t.glow1}" stop-opacity=".3"/><stop offset=".55" stop-color="${t.glow2}" stop-opacity=".12"/><stop offset="1" stop-color="${t.glow2}" stop-opacity="0"/>
+  <clipPath id="frame-${t.suffix}"><rect width="${W}" height="300" rx="18"/></clipPath>
+  <radialGradient id="bust-light-${t.suffix}" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(716 146) scale(248 220)">
+    <stop offset="0" stop-color="${t.glow1}" stop-opacity="${t.bannerGlowOpacity}"/><stop offset=".62" stop-color="${t.glow2}" stop-opacity=".04"/><stop offset="1" stop-color="${t.glow2}" stop-opacity="0"/>
   </radialGradient>
+  <linearGradient id="sweep-${t.suffix}" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".11"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+  </linearGradient>
+  <image id="bust-${t.suffix}" href="data:image/png;base64,${bustData}" x="562" y="3" width="306" height="420"/>
+  <mask id="bust-mask-${t.suffix}" x="0" y="0" width="${W}" height="300" maskUnits="userSpaceOnUse" style="mask-type:alpha"><use href="#bust-${t.suffix}"/></mask>
 </defs>
-<rect width="${W}" height="260" rx="18" fill="url(#dusk-${t.suffix})" stroke="${t.stageBorder}"/>
-<rect width="${W}" height="260" rx="18" fill="url(#glow-${t.suffix})"/>
-${sparkles}
-${star}
-<text x="64" y="148" font-family="${FONT}" font-size="54" font-weight="700" letter-spacing="-1.2" fill="#f7f4fb">${esc(data.banner.name)}</text>
-<text x="64" y="188" font-family="${FONT}" font-size="19" fill="#d4caeb">${esc(data.banner.role)}</text>`;
-  return svgDoc(W, 260, `${data.banner.name}, ${data.banner.role}`, body);
+<g clip-path="url(#frame-${t.suffix})">
+  <rect width="${W}" height="300" fill="${t.stage1}"/>
+  <rect width="${W}" height="300" fill="url(#bust-light-${t.suffix})"/>
+  <use href="#bust-${t.suffix}"/>
+  <g mask="url(#bust-mask-${t.suffix})" transform="rotate(14 716 146)">
+    <rect x="450" y="-100" width="76" height="500" fill="url(#sweep-${t.suffix})">
+      <animate attributeName="x" values="450;940;940" keyTimes="0;.22;1" dur="9s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <text x="56" y="134" font-family="${FONT}" font-size="56" font-weight="700" letter-spacing="-1.4" fill="${t.bannerTitle}">${esc(data.banner.name)}</text>
+  <text x="56" y="178" font-family="${FONT}" font-size="18" fill="${t.bannerDesc}">${esc(data.banner.role)}</text>
+</g>
+<rect x=".5" y=".5" width="879" height="299" rx="17.5" stroke="${t.stageBorder}"/>`;
+  return svgDoc(W, 300, `${data.banner.name}, ${data.banner.role}`, body);
 }
 
 function pill(p, t, x, y, size = 11.5) {
