@@ -42,33 +42,49 @@ ${body}</svg>
 `;
 }
 
-function banner(t) {
+function banner(t, narrow = false) {
+  const w = narrow ? 600 : W;
+  const h = narrow ? 420 : 300;
+  const id = `${t.suffix}${narrow ? "-narrow" : ""}`;
+  const bust = narrow
+    ? { x: 370, y: 136, width: 219, height: 300 }
+    : { x: 562, y: 3, width: 306, height: 420 };
+  const glow = narrow
+    ? { x: 480, y: 278, sx: 190, sy: 190 }
+    : { x: 716, y: 146, sx: 248, sy: 220 };
+  const sweep = narrow
+    ? { x: 280, end: 680, y: -40, height: 520, cx: 480, cy: 278 }
+    : { x: 450, end: 940, y: -100, height: 500, cx: 716, cy: 146 };
+  const copy = narrow
+    ? `<text x="36" y="92" font-family="${FONT}" font-size="54" font-weight="700" letter-spacing="-1.4" fill="${t.bannerTitle}">${esc(data.banner.name)}</text>
+  <text x="36" y="138" font-family="${FONT}" font-size="22" fill="${t.bannerDesc}">${wrapPx(data.banner.role, 300, 22).map((line, i) => `<tspan x="36" y="${138 + i * 30}">${esc(line)}</tspan>`).join("")}</text>`
+    : `<text x="56" y="134" font-family="${FONT}" font-size="56" font-weight="700" letter-spacing="-1.4" fill="${t.bannerTitle}">${esc(data.banner.name)}</text>
+  <text x="56" y="178" font-family="${FONT}" font-size="18" fill="${t.bannerDesc}">${esc(data.banner.role)}</text>`;
   const body = `
 <defs>
-  <clipPath id="frame-${t.suffix}"><rect width="${W}" height="300" rx="18"/></clipPath>
-  <radialGradient id="bust-light-${t.suffix}" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(716 146) scale(248 220)">
+  <clipPath id="frame-${id}"><rect width="${w}" height="${h}" rx="18"/></clipPath>
+  <radialGradient id="bust-light-${id}" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(${glow.x} ${glow.y}) scale(${glow.sx} ${glow.sy})">
     <stop offset="0" stop-color="${t.glow1}" stop-opacity="${t.bannerGlowOpacity}"/><stop offset=".62" stop-color="${t.glow2}" stop-opacity=".04"/><stop offset="1" stop-color="${t.glow2}" stop-opacity="0"/>
   </radialGradient>
-  <linearGradient id="sweep-${t.suffix}" x1="0" y1="0" x2="1" y2="0">
+  <linearGradient id="sweep-${id}" x1="0" y1="0" x2="1" y2="0">
     <stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".11"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
   </linearGradient>
-  <image id="bust-${t.suffix}" href="data:image/png;base64,${bustData}" x="562" y="3" width="306" height="420"/>
-  <mask id="bust-mask-${t.suffix}" x="0" y="0" width="${W}" height="300" maskUnits="userSpaceOnUse" style="mask-type:alpha"><use href="#bust-${t.suffix}"/></mask>
+  <image id="bust-${id}" href="data:image/png;base64,${bustData}" x="${bust.x}" y="${bust.y}" width="${bust.width}" height="${bust.height}"/>
+  <mask id="bust-mask-${id}" x="0" y="0" width="${w}" height="${h}" maskUnits="userSpaceOnUse" style="mask-type:alpha"><use href="#bust-${id}"/></mask>
 </defs>
-<g clip-path="url(#frame-${t.suffix})">
-  <rect width="${W}" height="300" fill="${t.stage1}"/>
-  <rect width="${W}" height="300" fill="url(#bust-light-${t.suffix})"/>
-  <use href="#bust-${t.suffix}"/>
-  <g mask="url(#bust-mask-${t.suffix})" transform="rotate(14 716 146)">
-    <rect x="450" y="-100" width="76" height="500" fill="url(#sweep-${t.suffix})">
-      <animate attributeName="x" values="450;940;940" keyTimes="0;.22;1" dur="9s" repeatCount="indefinite"/>
+<g clip-path="url(#frame-${id})">
+  <rect width="${w}" height="${h}" fill="${t.stage1}"/>
+  <rect width="${w}" height="${h}" fill="url(#bust-light-${id})"/>
+  <use href="#bust-${id}"/>
+  <g mask="url(#bust-mask-${id})" transform="rotate(14 ${sweep.cx} ${sweep.cy})">
+    <rect x="${sweep.x}" y="${sweep.y}" width="76" height="${sweep.height}" fill="url(#sweep-${id})">
+      <animate attributeName="x" values="${sweep.x};${sweep.end};${sweep.end}" keyTimes="0;.22;1" dur="9s" repeatCount="indefinite"/>
     </rect>
   </g>
-  <text x="56" y="134" font-family="${FONT}" font-size="56" font-weight="700" letter-spacing="-1.4" fill="${t.bannerTitle}">${esc(data.banner.name)}</text>
-  <text x="56" y="178" font-family="${FONT}" font-size="18" fill="${t.bannerDesc}">${esc(data.banner.role)}</text>
+  ${copy}
 </g>
-<rect x=".5" y=".5" width="879" height="299" rx="17.5" stroke="${t.stageBorder}"/>`;
-  return svgDoc(W, 300, `${data.banner.name}, ${data.banner.role}`, body);
+<rect x=".5" y=".5" width="${w - 1}" height="${h - 1}" rx="17.5" stroke="${t.stageBorder}"/>`;
+  return svgDoc(w, h, `${data.banner.name}, ${data.banner.role}`, body);
 }
 
 function pill(p, t, x, y, size = 11.5) {
@@ -176,6 +192,7 @@ function projects(t) {
 
 for (const t of Object.values(THEMES)) {
   writeFileSync(join(root, `assets/banner-${t.suffix}.svg`), banner(t));
+  writeFileSync(join(root, `assets/banner-${t.suffix}-narrow.svg`), banner(t, true));
   writeFileSync(join(root, `assets/oss-${t.suffix}.svg`), ossCards(t));
   writeFileSync(join(root, `assets/projects-${t.suffix}.svg`), projects(t));
   writeFileSync(join(root, `assets/oss-${t.suffix}-narrow.svg`), ossCardsNarrow(t));
