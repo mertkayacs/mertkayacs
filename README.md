@@ -9,6 +9,8 @@ Founder of [Eschatia Labs](https://eschatialabs.com), an independent, non-profit
 ## Open source
 
 <picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/oss-dark-narrow.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/oss-light-narrow.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/oss-light.svg">
   <img alt="Open-source contributions as of 2026-10-22: 8 merged and 18 in review in other people's projects, 4 more landed with credit, and listings in 16 curated lists" src="assets/oss-dark.svg" width="880">
@@ -17,6 +19,8 @@ Founder of [Eschatia Labs](https://eschatialabs.com), an independent, non-profit
 ## Projects
 
 <picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/projects-dark-narrow.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/projects-light-narrow.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/projects-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/projects-light.svg">
   <img alt="Projects: reevesagents, xdfdet, tholos, jevalt, jevoss, ultramod" src="assets/projects-dark.svg" width="880">

@@ -97,11 +97,11 @@ ${star}
   return svgDoc(W, 260, `${data.banner.name}, ${data.banner.role}`, body);
 }
 
-function pill(p, t, x, y) {
+function pill(p, t, x, y, size = 11.5) {
   const color = t[p.kind] || t.muted;
-  const w = Math.round(estW(p.text, 11.5)) + 18;
+  const w = Math.round(estW(p.text, size)) + 18;
   return `<g><rect x="${x}" y="${y}" width="${w}" height="22" rx="11" fill="${t.card}" stroke="${color}" stroke-opacity=".55"/>
-<text x="${x + 9}" y="${y + 15.4}" font-family="${FONT}" font-size="11.5" font-weight="600" fill="${color}">${esc(p.text)}</text></g>`;
+<text x="${x + 9}" y="${y + +(size * 1.34).toFixed(1)}" font-family="${FONT}" font-size="${size}" font-weight="600" fill="${color}">${esc(p.text)}</text></g>`;
 }
 
 function ossCards(t) {
@@ -134,6 +134,57 @@ const wrap = (s, max) => {
   return lines.slice(0, 2);
 };
 
+// Narrow single-column variants. 420 px wide so that at a 390 px CSS width,
+// common on phones, titles render near 15 px and descriptions near 12 px.
+const NW = 420, NM = 20, NGAP = 12, NTITLE = 16.2, NDESC = 12.9, NPILL = 12;
+const wrapPx = (s, max, px) => {
+  const words = s.split(" "); const lines = [""];
+  for (const w of words) {
+    const cur = lines[lines.length - 1];
+    const cand = (cur + " " + w).trim();
+    if (estW(cand, px) > max && cur) lines.push(w);
+    else lines[lines.length - 1] = cand;
+  }
+  return lines;
+};
+
+function ossCardsNarrow(t) {
+  const cw = NW - NM * 2, ch = 114;
+  const rows = data.oss.cards.map((c, i) => {
+    const x = NM, y = 14 + i * (ch + NGAP);
+    const desc = wrapPx(c.desc, cw - 36, NDESC).map((l, j) =>
+      `<text x="${x + 18}" y="${y + 54 + j * 17}" font-family="${FONT}" font-size="${NDESC}" fill="${t.desc}">${esc(l)}</text>`).join("");
+    let pillX = x + 18;
+    const pills = c.pills.map((p) => { const s = pill(p, t, pillX, y + 78, NPILL); pillX += Math.round(estW(p.text, NPILL)) + 18 + 8; return s; }).join("");
+    return `<g><rect x="${x}" y="${y}" width="${cw}" height="${ch}" rx="14" fill="${t.card}" stroke="${t.cardBorder}"/>
+<text x="${x + 18}" y="${y + 30}" font-family="${FONT}" font-size="${NTITLE}" font-weight="650" fill="${t.title}">${esc(c.title)}</text>
+${desc}
+${pills}</g>`;
+  }).join("");
+  const tot = data.oss.totals;
+  const h = 14 + data.oss.cards.length * ch + (data.oss.cards.length - 1) * NGAP + 76;
+  const totals = `
+<text x="${NM}" y="${h - 66}" font-family="${FONT}" font-size="13.5" fill="${t.title}">${esc(tot.text_prefix)}</text>
+<text x="${NM}" y="${h - 46}" font-family="${FONT}" font-size="13.5" fill="${t.muted}"><tspan fill="${t.merged}" font-weight="650">${esc(tot.merged)}</tspan><tspan fill="${t.muted}">, </tspan><tspan fill="${t.open}" font-weight="650">${esc(tot.open)}</tspan><tspan fill="${t.muted}">, </tspan>${esc(tot.closed)},</text>
+<text x="${NM}" y="${h - 26}" font-family="${FONT}" font-size="13.5" fill="${t.muted}">as of ${data.as_of}.</text>`;
+  return svgDoc(NW, h, `Open source contributions: ${tot.text_prefix} ${tot.merged}, ${tot.open}, ${tot.closed}, as of ${data.as_of}`, rows + totals);
+}
+
+function projectsNarrow(t) {
+  const cw = NW - NM * 2, ch = 110;
+  const tiles = data.projects.map((p, i) => {
+    const x = NM, y = 14 + i * (ch + NGAP);
+    const desc = wrapPx(p.desc, cw - 36, NDESC).map((l, j) =>
+      `<text x="${x + 18}" y="${y + 54 + j * 17}" font-family="${FONT}" font-size="${NDESC}" fill="${t.desc}">${esc(l)}</text>`).join("");
+    const stat = p.stat ? `<text x="${x + 18}" y="${y + ch - 16}" font-family="${FONT}" font-size="12" font-weight="600" fill="${t.merged}">${esc(p.stat)}</text>` : "";
+    return `<g><rect x="${x}" y="${y}" width="${cw}" height="${ch}" rx="14" fill="${t.card}" stroke="${t.cardBorder}"/>
+<text x="${x + 18}" y="${y + 30}" font-family="${FONT}" font-size="${NTITLE}" font-weight="650" fill="${t.title}">${esc(p.name)}</text>${desc}${stat}</g>`;
+  }).join("");
+  const h = 14 + data.projects.length * ch + (data.projects.length - 1) * NGAP + 42;
+  const foot = `<text x="${NW - NM}" y="${h - 16}" text-anchor="end" font-family="${FONT}" font-size="11.5" fill="${t.muted}">${esc(data.footnote)}</text>`;
+  return svgDoc(NW, h, "Projects: reevesagents, xdfdet, tholos, jevalt, jevoss, ultramod", tiles + foot);
+}
+
 function projects(t) {
   const m = 24, gap = 12, cw = (W - m * 2 - gap * 2) / 3, ch = 112;
   const tiles = data.projects.map((p, i) => {
@@ -153,5 +204,7 @@ for (const t of Object.values(THEMES)) {
   writeFileSync(join(root, `assets/banner-${t.suffix}.svg`), banner(t));
   writeFileSync(join(root, `assets/oss-${t.suffix}.svg`), ossCards(t));
   writeFileSync(join(root, `assets/projects-${t.suffix}.svg`), projects(t));
+  writeFileSync(join(root, `assets/oss-${t.suffix}-narrow.svg`), ossCardsNarrow(t));
+  writeFileSync(join(root, `assets/projects-${t.suffix}-narrow.svg`), projectsNarrow(t));
   console.log(`wrote ${t.suffix} variants`);
 }
