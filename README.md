@@ -76,7 +76,7 @@ Also: SQL, NLTK, Weaviate.
 
 - <a href="https://github.com/QwenLM/qwen-code/pull/15144"><img src="assets/logos/qwen-code.png" height="16" alt="" align="absmiddle"> <b>Qwen Code</b></a> · Kept files behind path deny rules out of grep and glob results.
 - <a href="https://github.com/huggingface/datasets/pulls?q=is%3Apr+author%3Amertkayacs"><img src="assets/logos/hf-datasets.png" height="16" alt="" align="absmiddle"> <b>Hugging Face datasets</b></a> · Fixed CSV and SQL exports, label casting and row indexing in the datasets library.
-- <a href="https://github.com/huggingface/huggingface_hub/issues/5283"><img src="assets/logos/hf-hub.png" height="16" alt="" align="absmiddle"> <b>Hugging Face Hub</b></a> · Made job listing use the token and endpoint set on the client.
+- <a href="https://github.com/huggingface/huggingface_hub/pull/5285"><img src="assets/logos/hf-hub.png" height="16" alt="" align="absmiddle"> <b>Hugging Face Hub</b></a> · Made job listing use the token and endpoint set on the client.
 - <a href="https://github.com/sgl-project/sglang/pull/43377"><img src="assets/logos/sglang.png" height="16" alt="" align="absmiddle"> <b>SGLang</b></a> · Kept Hermes streaming text in order around tool calls.
 - <a href="https://github.com/anthropics/claude-agent-sdk-python/pull/1427"><img src="assets/logos/claude-agent-sdk.png" height="16" alt="" align="absmiddle"> <b>Claude Agent SDK</b></a> · Stopped tool inputs from renaming sessions.
 - <a href="https://github.com/EleutherAI/lm-evaluation-harness/pull/4346"><img src="assets/logos/lm-eval.png" height="16" alt="" align="absmiddle"> <b>LM Evaluation Harness</b></a> · Kept question whitespace in the mmlu_cot_llama prompt.
