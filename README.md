@@ -68,12 +68,15 @@ Also: SQL, NLTK, Weaviate.
 - <a href="https://github.com/morluto/rea/releases/tag/rea-agents-6.6.0"><img src="assets/logos/rea.png" height="16" alt="" align="absmiddle"> <b>rea</b></a> · Fixed number, timestamp and locale parsing in a reverse-engineering toolkit, with the 6.6.0 release notes naming me. ([d54f5b07b](https://github.com/morluto/rea/commit/d54f5b07b))
 - <a href="https://github.com/errhythm/ccswap/commit/b659a4c79"><img src="assets/logos/claude-swap.png" height="16" alt="" align="absmiddle"> <b>ccswap</b></a> · Carried the owner-only temp file fix into a downstream account manager.
 
+**Approved**
+
+- <a href="https://github.com/ollama/ollama/pull/19110"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logos/ollama-on-dark.png"><img src="assets/logos/ollama.png" height="16" alt="" align="absmiddle"></picture> <b>Ollama</b></a> · Kept streamed thinking in order and images with their text in API requests.
+
 **In progress**
 
 - <a href="https://github.com/QwenLM/qwen-code/pull/15144"><img src="assets/logos/qwen-code.png" height="16" alt="" align="absmiddle"> <b>Qwen Code</b></a> · Kept files behind path deny rules out of grep and glob results.
 - <a href="https://github.com/huggingface/datasets/pulls?q=is%3Apr+author%3Amertkayacs"><img src="assets/logos/hf-datasets.png" height="16" alt="" align="absmiddle"> <b>Hugging Face datasets</b></a> · Fixed CSV and SQL exports, label casting and row indexing in the datasets library.
 - <a href="https://github.com/sgl-project/sglang/pull/43377"><img src="assets/logos/sglang.png" height="16" alt="" align="absmiddle"> <b>SGLang</b></a> · Kept Hermes streaming text in order around tool calls.
-- <a href="https://github.com/ollama/ollama/pulls?q=is%3Apr+author%3Amertkayacs"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logos/ollama-on-dark.png"><img src="assets/logos/ollama.png" height="16" alt="" align="absmiddle"></picture> <b>Ollama</b></a> · Kept streamed thinking in order and images with their text in API requests.
 - <a href="https://github.com/anthropics/claude-agent-sdk-python/pull/1427"><img src="assets/logos/claude-agent-sdk.png" height="16" alt="" align="absmiddle"> <b>Claude Agent SDK</b></a> · Stopped tool inputs from renaming sessions.
 - <a href="https://github.com/EleutherAI/lm-evaluation-harness/pull/4346"><img src="assets/logos/lm-eval.png" height="16" alt="" align="absmiddle"> <b>LM Evaluation Harness</b></a> · Kept question whitespace in the mmlu_cot_llama prompt.
 - <a href="https://github.com/openai/codex/issues/56057"><img src="assets/logos/codex.png" height="16" alt="" align="absmiddle"> <b>Codex</b></a> · Made the JSON server details include the configured required flag.
