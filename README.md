@@ -52,37 +52,34 @@ Also: SQL, NLTK, Weaviate.
 
 ## Open source
 
-**Merged**
+**Used by millions**
 
-- <a href="https://github.com/musistudio/claude-code-router/pull/1871"><img src="assets/logos/claude-code-router.png" height="16" alt="" align="absmiddle"> <b>Claude Code Router</b></a> · Stopped the Docker setup from handing the management token to unauthenticated clients.
-- <a href="https://github.com/realiti4/claude-swap/pull/442"><img src="assets/logos/claude-swap.png" height="16" alt="" align="absmiddle"> <b>claude-swap</b></a> · Created the temporary JSON file with owner-only permissions from the start. ([v0.27.2 release notes](https://github.com/realiti4/claude-swap/releases/tag/v0.27.2))
-- <a href="https://github.com/esimov/caire/pull/114"><img src="assets/logos/caire.png" height="16" alt="" align="absmiddle"> <b>caire</b></a> · Kept transparency when enlarging images and rejected masks with the wrong dimensions. ([#115](https://github.com/esimov/caire/pull/115), [#116](https://github.com/esimov/caire/pull/116), [#119](https://github.com/esimov/caire/pull/119))
-- <a href="https://github.com/academa-labs/manimgx/pulls?q=is%3Apr+author%3Amertkayacs+is%3Amerged"><img src="assets/logos/manimgx.png" height="16" alt="" align="absmiddle"> <b>ManimGX</b></a> · Fixed text sizing, script validation and scene setup in a Manim-based video engine.
-- <a href="https://github.com/NousResearch/hermes-official-plugins/pull/1"><img src="assets/logos/hermes-agent.png" height="16" alt="" align="absmiddle"> <b>Hermes Official Plugins</b></a> · Fixed Home Assistant control and expanded Spotify client tests. ([#7](https://github.com/NousResearch/hermes-official-plugins/pull/7))
-- <a href="https://github.com/NousResearch/hermes-agent/pull/145738"><img src="assets/logos/hermes-agent.png" height="16" alt="" align="absmiddle"> <b>Hermes Agent</b></a> · Fixed image installs that were missing their sealed payloads. ([#138650 credit](https://github.com/NousResearch/hermes-agent/pull/138650))
-- <a href="https://github.com/jarrodwatts/claude-hud/pull/802"><img src="assets/logos/claude-hud.png" height="16" alt="" align="absmiddle"> <b>Claude HUD</b></a> · Kept cost totals correct when several sessions update them at once.
-- <a href="https://github.com/sirmalloc/ccstatusline/pull/695"><img src="assets/logos/ccstatusline.png" height="16" alt="" align="absmiddle"> <b>ccstatusline</b></a> · Added spend-limit usage widgets for developers behind a gateway.
+- <a href="https://github.com/morluto/rea/releases/tag/rea-agents-6.6.0"><img src="assets/logos/rea.png" height="16" alt="" align="absmiddle"> <b>rea</b></a> · Credited · Fixed number, timestamp and locale parsing in a reverse-engineering toolkit, with the 6.6.0 release notes naming me. (1.17M npm downloads a month) ([d54f5b07b](https://github.com/morluto/rea/commit/d54f5b07b))
+- <a href="https://github.com/NousResearch/hermes-agent/pull/145738"><img src="assets/logos/hermes-agent.png" height="16" alt="" align="absmiddle"> <b>Hermes Agent</b></a> · Merged · Fixed image installs that were missing their sealed payloads. ([#138650 credit](https://github.com/NousResearch/hermes-agent/pull/138650))
+- <a href="https://github.com/NousResearch/hermes-official-plugins/pull/1"><img src="assets/logos/hermes-agent.png" height="16" alt="" align="absmiddle"> <b>Hermes Official Plugins</b></a> · Merged · Fixed Home Assistant control and expanded Spotify client tests. ([#7](https://github.com/NousResearch/hermes-official-plugins/pull/7))
+- <a href="https://github.com/ollama/ollama/pull/19110"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logos/ollama-on-dark.png"><img src="assets/logos/ollama.png" height="16" alt="" align="absmiddle"></picture> <b>Ollama</b></a> · Approved · Kept streamed thinking in order and images with their text in API requests. (194M Docker pulls)
+- <a href="https://github.com/huggingface/huggingface_hub/pull/5285"><img src="assets/logos/hf-hub.png" height="16" alt="" align="absmiddle"> <b>Hugging Face Hub</b></a> · Merged · Made job listing use the token and endpoint set on the client. (233M PyPI downloads a month)
+- <a href="https://github.com/deepseek-ai/deepseek-harness/discussions/10604"><img src="assets/logos/deepseek-harness.png" height="16" alt="" align="absmiddle"> <b>DeepSeek Harness</b></a> · In progress · Made --dump-config show telemetry as disabled when it is disabled.
+- <a href="https://github.com/openai/codex/issues/56057"><img src="assets/logos/codex.png" height="16" alt="" align="absmiddle"> <b>Codex</b></a> · In progress · Made the JSON server details include the configured required flag. (86M npm downloads a month)
+- <a href="https://github.com/huggingface/datasets/pulls?q=is%3Apr+author%3Amertkayacs"><img src="assets/logos/hf-datasets.png" height="16" alt="" align="absmiddle"> <b>Hugging Face datasets</b></a> · In progress · Fixed CSV and SQL exports, label casting and row indexing in the datasets library. (67M PyPI downloads a month)
+- <a href="https://github.com/anthropics/claude-agent-sdk-python/pull/1427"><img src="assets/logos/claude-agent-sdk.png" height="16" alt="" align="absmiddle"> <b>Claude Agent SDK</b></a> · In progress · Stopped tool inputs from renaming sessions. (30M PyPI downloads a month)
 
-**Credited**
+**Widely used developer tools**
 
-- <a href="https://github.com/morluto/rea/releases/tag/rea-agents-6.6.0"><img src="assets/logos/rea.png" height="16" alt="" align="absmiddle"> <b>rea</b></a> · Fixed number, timestamp and locale parsing in a reverse-engineering toolkit, with the 6.6.0 release notes naming me. ([d54f5b07b](https://github.com/morluto/rea/commit/d54f5b07b))
-- <a href="https://github.com/errhythm/ccswap/commit/b659a4c79"><img src="assets/logos/claude-swap.png" height="16" alt="" align="absmiddle"> <b>ccswap</b></a> · Carried the owner-only temp file fix into a downstream account manager.
+- <a href="https://github.com/musistudio/claude-code-router/pull/1871"><img src="assets/logos/claude-code-router.png" height="16" alt="" align="absmiddle"> <b>Claude Code Router</b></a> · Merged · Stopped the Docker setup from handing the management token to unauthenticated clients. (122K npm downloads a month)
+- <a href="https://github.com/jarrodwatts/claude-hud/pull/802"><img src="assets/logos/claude-hud.png" height="16" alt="" align="absmiddle"> <b>Claude HUD</b></a> · Merged · Kept cost totals correct when several sessions update them at once.
+- <a href="https://github.com/sirmalloc/ccstatusline/pull/695"><img src="assets/logos/ccstatusline.png" height="16" alt="" align="absmiddle"> <b>ccstatusline</b></a> · Merged · Added spend-limit usage widgets for developers behind a gateway. (130K npm downloads a month) ([v2.2.33 release notes](https://github.com/sirmalloc/ccstatusline/releases/tag/v2.2.33))
+- <a href="https://github.com/esimov/caire/pull/114"><img src="assets/logos/caire.png" height="16" alt="" align="absmiddle"> <b>caire</b></a> · Merged · Kept transparency when enlarging images and rejected masks with the wrong dimensions. ([#115](https://github.com/esimov/caire/pull/115), [#116](https://github.com/esimov/caire/pull/116), [#119](https://github.com/esimov/caire/pull/119))
+- <a href="https://github.com/sgl-project/sglang/pull/43377"><img src="assets/logos/sglang.png" height="16" alt="" align="absmiddle"> <b>SGLang</b></a> · In progress · Kept Hermes streaming text in order around tool calls. (3.0M PyPI downloads a month)
+- <a href="https://github.com/QwenLM/qwen-code/pull/15144"><img src="assets/logos/qwen-code.png" height="16" alt="" align="absmiddle"> <b>Qwen Code</b></a> · In progress · Kept files behind path deny rules out of grep and glob results. (318K npm downloads a month)
+- <a href="https://github.com/EleutherAI/lm-evaluation-harness/pull/4346"><img src="assets/logos/lm-eval.png" height="16" alt="" align="absmiddle"> <b>LM Evaluation Harness</b></a> · In progress · Kept question whitespace in the mmlu_cot_llama prompt. (1.0M PyPI downloads a month)
 
-**Approved**
+**Smaller projects**
 
-- <a href="https://github.com/ollama/ollama/pull/19110"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logos/ollama-on-dark.png"><img src="assets/logos/ollama.png" height="16" alt="" align="absmiddle"></picture> <b>Ollama</b></a> · Kept streamed thinking in order and images with their text in API requests.
-
-**In progress**
-
-- <a href="https://github.com/QwenLM/qwen-code/pull/15144"><img src="assets/logos/qwen-code.png" height="16" alt="" align="absmiddle"> <b>Qwen Code</b></a> · Kept files behind path deny rules out of grep and glob results.
-- <a href="https://github.com/huggingface/datasets/pulls?q=is%3Apr+author%3Amertkayacs"><img src="assets/logos/hf-datasets.png" height="16" alt="" align="absmiddle"> <b>Hugging Face datasets</b></a> · Fixed CSV and SQL exports, label casting and row indexing in the datasets library.
-- <a href="https://github.com/huggingface/huggingface_hub/pull/5285"><img src="assets/logos/hf-hub.png" height="16" alt="" align="absmiddle"> <b>Hugging Face Hub</b></a> · Made job listing use the token and endpoint set on the client.
-- <a href="https://github.com/sgl-project/sglang/pull/43377"><img src="assets/logos/sglang.png" height="16" alt="" align="absmiddle"> <b>SGLang</b></a> · Kept Hermes streaming text in order around tool calls.
-- <a href="https://github.com/anthropics/claude-agent-sdk-python/pull/1427"><img src="assets/logos/claude-agent-sdk.png" height="16" alt="" align="absmiddle"> <b>Claude Agent SDK</b></a> · Stopped tool inputs from renaming sessions.
-- <a href="https://github.com/EleutherAI/lm-evaluation-harness/pull/4346"><img src="assets/logos/lm-eval.png" height="16" alt="" align="absmiddle"> <b>LM Evaluation Harness</b></a> · Kept question whitespace in the mmlu_cot_llama prompt.
-- <a href="https://github.com/openai/codex/issues/56057"><img src="assets/logos/codex.png" height="16" alt="" align="absmiddle"> <b>Codex</b></a> · Made the JSON server details include the configured required flag.
-- <a href="https://github.com/deepseek-ai/deepseek-harness/discussions/10604"><img src="assets/logos/deepseek-harness.png" height="16" alt="" align="absmiddle"> <b>DeepSeek Harness</b></a> · Made --dump-config show telemetry as disabled when it is disabled.
-- <a href="https://github.com/MoonshotAI/kimi-code/issues/4324"><img src="assets/logos/kimi-code.png" height="16" alt="" align="absmiddle"> <b>Kimi Code</b></a> · Fixed log size limits so 10 MB no longer becomes 10 bytes.
+- <a href="https://github.com/realiti4/claude-swap/pull/442"><img src="assets/logos/claude-swap.png" height="16" alt="" align="absmiddle"> <b>claude-swap</b></a> · Merged · Created the temporary JSON file with owner-only permissions from the start. ([v0.27.2 release notes](https://github.com/realiti4/claude-swap/releases/tag/v0.27.2))
+- <a href="https://github.com/academa-labs/manimgx/pulls?q=is%3Apr+author%3Amertkayacs+is%3Amerged"><img src="assets/logos/manimgx.png" height="16" alt="" align="absmiddle"> <b>ManimGX</b></a> · Merged · Fixed text sizing, script validation and scene setup in a Manim-based video engine.
+- <a href="https://github.com/errhythm/ccswap/commit/b659a4c79"><img src="assets/logos/claude-swap.png" height="16" alt="" align="absmiddle"> <b>ccswap</b></a> · Credited · Carried the owner-only temp file fix into a downstream account manager.
+- <a href="https://github.com/MoonshotAI/kimi-code/issues/4324"><img src="assets/logos/kimi-code.png" height="16" alt="" align="absmiddle"> <b>Kimi Code</b></a> · In progress · Fixed log size limits so 10 MB no longer becomes 10 bytes.
 
 The full list is on [mertkayacs.com/open-source](https://mertkayacs.com/open-source/).
 
