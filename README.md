@@ -5,7 +5,7 @@
   </picture>
 </p>
 
-<h1 align="center">Small models on a laptop. Agents you can inspect.</h1>
+<h1 align="center">Local, Sovereign, Open Source AI must win.</h1>
 
 <p align="center">
   Senior AI Engineer at Enocta.<br>
