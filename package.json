@@ -7,6 +7,7 @@
     "check": "node scripts/check-readme.mjs"
   },
   "devDependencies": {
+    "lucide-static": "1.70.0",
     "simple-icons": "16.35.0"
   }
 }

@@ -1,6 +1,197 @@
 {
   "readme": {
-    "intro": "I'm a senior AI engineer at Enocta and the founder of [Eschatia Labs](https://eschatialabs.com), an independent, non-profit open-source AI research lab. I build small models that run on a laptop, agents you can inspect and detectors that show their evidence.",
+    "repo": "mertkayacs",
+    "colors": {
+      "accent": "#1E2A38",
+      "ink": "#2B2F33",
+      "stars": "#8A6D3B"
+    },
+    "logo": {
+      "light": "docs/brand/svg/mertkaya-logo-on-light.svg",
+      "dark": "docs/brand/svg/mertkaya-logo-on-dark.svg",
+      "alt": "Mert Kaya",
+      "width": 260
+    },
+    "tagline": "Small models on a laptop. Agents you can inspect.",
+    "subtitle": {
+      "line": "Senior AI Engineer at Enocta.",
+      "highlight": "Founder of Eschatia Labs, an independent, non-profit open-source AI research lab."
+    },
+    "badges": [
+      {
+        "label": "paper",
+        "message": "IEEE UBMK 2026",
+        "alt": "Paper in IEEE Xplore: UBMK 2026",
+        "link": "https://ieeexplore.ieee.org/document/11745298"
+      },
+      {
+        "label": "thesis",
+        "message": "MSc, TED University",
+        "alt": "MSc thesis at TED University, on Zenodo",
+        "link": "https://doi.org/10.5281/zenodo.18998566"
+      },
+      {
+        "label": "ORCID",
+        "message": "0009-0006-7018-3027",
+        "logo": "orcid",
+        "alt": "ORCID 0009-0006-7018-3027",
+        "link": "https://orcid.org/0009-0006-7018-3027"
+      },
+      {
+        "label": "npm",
+        "message": "mkcsai",
+        "logo": "npm",
+        "alt": "npm packages by mkcsai",
+        "link": "https://www.npmjs.com/~mkcsai"
+      },
+      {
+        "stars": "mertkayacs",
+        "alt": "GitHub stars across all repositories",
+        "link": "https://github.com/mertkayacs?tab=repositories"
+      }
+    ],
+    "ctas": [
+      {
+        "label": "Website",
+        "link": "https://mertkayacs.com/",
+        "slot": "website-badge",
+        "icon": "globe",
+        "primary": true
+      },
+      {
+        "label": "Eschatia Labs",
+        "link": "https://eschatialabs.com/",
+        "slot": "lab-badge",
+        "icon": "flask-conical",
+        "primary": true
+      },
+      {
+        "label": "Hugging Face",
+        "link": "https://huggingface.co/mertkayacs",
+        "icon": "box"
+      },
+      {
+        "label": "LinkedIn",
+        "link": "https://www.linkedin.com/in/mertkayacs",
+        "icon": "briefcase-business"
+      },
+      {
+        "label": "X",
+        "link": "https://x.com/mertkayaai",
+        "icon": "at-sign"
+      },
+      {
+        "label": "Kaggle",
+        "link": "https://www.kaggle.com/mertilovski",
+        "icon": "database"
+      }
+    ],
+    "projects": {
+      "items": [
+        {
+          "name": "ReevesAgents",
+          "repo": "reevesagents",
+          "branch": "master",
+          "slug": "reevesagents",
+          "logoWidth": 236,
+          "text": [
+            "Runs Claude Code, Codex and 20+ other coding assistants side by side in one terminal, with one of them coordinating the rest."
+          ],
+          "downloads": {
+            "label": "npm",
+            "message": "8,790",
+            "logo": "npm",
+            "alt": "8,790 npm downloads",
+            "link": "https://www.npmjs.com/package/reevesagents"
+          }
+        },
+        {
+          "name": "JevAlt",
+          "repo": "jevalt",
+          "branch": "main",
+          "slug": "jevalt",
+          "logoWidth": 137,
+          "text": [
+            "The three 4B decision models for English, Turkish and German behind ",
+            {
+              "link": "https://emberwick.mertkayacs.com/",
+              "text": "Emberwick",
+              "slot": "jevalt-card"
+            },
+            ", a medieval village you play in the browser."
+          ],
+          "downloads": {
+            "label": "Hugging Face",
+            "message": "4,747",
+            "logo": "huggingface",
+            "alt": "4,747 Hugging Face model downloads",
+            "link": "https://huggingface.co/collections/mertkayacs/jevalt-decision-models"
+          }
+        },
+        {
+          "name": "xdfdet",
+          "repo": "xdfdet",
+          "branch": "main",
+          "slug": "xdfdet",
+          "logoWidth": 143,
+          "text": [
+            "Explainable deepfake detection: eight EfficientNet-B4 models with Grad-CAM evidence, the code behind the MSc thesis and the IEEE UBMK 2026 paper."
+          ],
+          "downloads": {
+            "label": "Hugging Face",
+            "message": "1,882",
+            "logo": "huggingface",
+            "alt": "1,882 Hugging Face downloads",
+            "link": "https://huggingface.co/mertkayacs/xdfdet"
+          }
+        },
+        {
+          "name": "Tholos",
+          "repo": "tholos",
+          "branch": "main",
+          "slug": "tholos",
+          "logoWidth": 151,
+          "text": [
+            "Small local assistants that share tables, notes and a task board, every action behind a rule."
+          ],
+          "downloads": {
+            "label": "Hugging Face",
+            "message": "2,650",
+            "logo": "huggingface",
+            "alt": "Tholos-2B: 2,650 Hugging Face downloads",
+            "link": "https://huggingface.co/mertkayacs/Tholos-2B"
+          }
+        },
+        {
+          "name": "Ultra Mod",
+          "repo": "ultramod",
+          "branch": "main",
+          "slug": "ultramod",
+          "logoWidth": 196,
+          "text": [
+            "The all-in-one mod pack for Claude Code, with ten mods in one plugin."
+          ],
+          "downloads": {
+            "label": "npm",
+            "message": "2,340",
+            "logo": "npm",
+            "alt": "2,340 npm downloads",
+            "link": "https://www.npmjs.com/package/ultramod"
+          }
+        },
+        {
+          "name": "JevOss",
+          "repo": "jevoss",
+          "branch": "main",
+          "slug": "jevoss",
+          "logoWidth": 147,
+          "text": [
+            "Measures how often a decision model is right, whether its probabilities match that accuracy and which inputs change its answers."
+          ]
+        }
+      ],
+      "note": "Download counts from 7 November 2026: 12,997 on Hugging Face (9,279 for models, 3,718 for datasets) and 11,130 on npm."
+    },
     "career": [
       {
         "text": "**Senior AI Engineer**, Enocta, since 2025. Assistants that answer from company documents (RAG), an agentic customer-success workflow, role-play training simulations."
@@ -18,39 +209,24 @@
         "text": "**Internships** at SimBT, BiSoft and Roar Games Studio, 2019-2021. Defence technology software, an NLTK and Neo4j chatbot before LLMs, Unity and C# games."
       }
     ],
-    "projects": [
+    "education": [
       {
-        "name": "Emberwick",
-        "href": "https://emberwick.mertkayacs.com",
-        "text": "A medieval village you play in the browser. Three small decision models decide what the villagers do through storms, fires, markets and wolves."
+        "title": "MSc Computer Science",
+        "text": "TED University, 2023-2025, full merit scholarship. Thesis: [Explainable deepfake detection using frame level CNN models: A comparative study of augmentation and cutout techniques](https://doi.org/10.5281/zenodo.18998566), advised by Professor Venera Adanova."
       },
       {
-        "name": "reevesagents",
-        "href": "https://github.com/mertkayacs/reevesagents",
-        "text": "Run Claude Code, Codex and 20+ other coding assistants side by side in one terminal, with one of them coordinating the rest. CLI, TUI, Web UI and MCP server. 107 stars, 2.4k npm downloads a month."
+        "title": "MSc Computer Science and AI",
+        "text": "IU International University of Applied Sciences, 2022-2023, full scholarship, remote. One year before I moved to TED University."
       },
       {
-        "name": "JevAlt",
-        "href": "https://github.com/mertkayacs/jevalt",
-        "text": "The three 4B decision models behind Emberwick, for English, Turkish and German. Calibrated answers on a laptop with about 3 GB of memory. 3.3k Hugging Face downloads."
+        "title": "BSc Computer Engineering",
+        "text": "TOBB University of Economics and Technology (TOBB ETU), 2016-2021."
       },
       {
-        "name": "xdfdet",
-        "href": "https://github.com/mertkayacs/xdfdet",
-        "text": "Explainable deepfake detection: eight EfficientNet-B4 models with Grad-CAM evidence, the code behind my thesis and conference paper. 977 Hugging Face downloads."
-      },
-      {
-        "name": "Tholos",
-        "href": "https://github.com/mertkayacs/tholos",
-        "text": "Small local assistants that share tables, notes and a task board, every action behind a rule. Its model, Tholos-2B: 2.2k Hugging Face downloads."
-      },
-      {
-        "name": "Ultra Mod",
-        "href": "https://github.com/mertkayacs/ultramod",
-        "text": "The all-in-one mod pack for Claude Code. 2.2k npm downloads a month."
+        "title": "UBMK 2026 (IEEE)",
+        "text": "[Augmentation and Cutout in Deepfake Detection: A Comparative Study of Accuracy, Calibration, and Attention](https://ieeexplore.ieee.org/document/11745298), with Venera Adanova. Presented at UBMK 2026 in Istanbul and published in IEEE Xplore."
       }
     ],
-    "projectsCounts": "Download counts from 22 October 2026: 9,775 for my models and datasets on Hugging Face and 9,982 for my npm packages.",
     "skills": {
       "rows": [
         {
@@ -136,115 +312,351 @@
       ],
       "also": ["SQL", "NLTK", "Weaviate"]
     },
-    "education": [
-      {
-        "title": "MSc Computer Science",
-        "text": "TED University, 2023-2025, full merit scholarship. Thesis: [Explainable deepfake detection using frame level CNN models: A comparative study of augmentation and cutout techniques](https://doi.org/10.5281/zenodo.18998566), advised by Professor Venera Adanova."
-      },
-      {
-        "title": "MSc Computer Science and AI",
-        "text": "IU International University of Applied Sciences, 2022-2023, full scholarship, remote. One year before I moved to TED University."
-      },
-      {
-        "title": "BSc Computer Engineering",
-        "text": "TOBB University of Economics and Technology (TOBB ETU), 2016-2021."
-      },
-      {
-        "title": "UBMK 2026 (IEEE)",
-        "text": "[Augmentation and Cutout in Deepfake Detection: A Comparative Study of Accuracy, Calibration, and Attention](https://mertkayacs.com/research/), with Professor Venera Adanova. Presented at the 11th International Conference on Computer Science and Engineering in Istanbul, September 2026. To appear in IEEE Xplore."
-      }
-    ],
     "openSource": {
-      "merged": [
+      "groups": [
         {
-          "name": "rea",
-          "href": "https://github.com/morluto/rea/releases/tag/rea-agents-6.6.0",
-          "logo": "rea.png",
-          "title": "Credited: my fixes landed on main with co-author credit, and the 6.6.0 release notes thank me"
+          "label": "Used by millions",
+          "items": [
+            {
+              "name": "rea",
+              "href": "https://github.com/morluto/rea/releases/tag/rea-agents-6.6.0",
+              "logo": "rea.png",
+              "state": "Credited",
+              "kind": "Bug fixes",
+              "about": "rea gives AI agents tools for reverse engineering software, downloaded 1.66M times a month from npm.",
+              "evidence": [
+                {
+                  "text": "d54f5b07b",
+                  "href": "https://github.com/morluto/rea/commit/d54f5b07b"
+                }
+              ]
+            },
+            {
+              "name": "Hermes Agent",
+              "href": "https://github.com/NousResearch/hermes-agent/pull/145738",
+              "logo": "hermes-agent.png",
+              "state": "Merged",
+              "kind": "Bug fixes",
+              "about": "Nous Research's open agent that learns from experience and remembers across sessions, with 261K GitHub stars.",
+              "evidence": [
+                {
+                  "text": "#138650 credit",
+                  "href": "https://github.com/NousResearch/hermes-agent/pull/138650"
+                }
+              ]
+            },
+            {
+              "name": "Hermes Official Plugins",
+              "href": "https://github.com/NousResearch/hermes-official-plugins/pull/1",
+              "logo": "hermes-agent.png",
+              "state": "Merged",
+              "kind": "Bug fix and tests",
+              "about": "The official plugin collection for Hermes Agent, starred 607 times on GitHub.",
+              "evidence": [
+                {
+                  "text": "#7",
+                  "href": "https://github.com/NousResearch/hermes-official-plugins/pull/7"
+                }
+              ]
+            },
+            {
+              "name": "Claude-Mem",
+              "href": "https://github.com/thedotmack/claude-mem/pull/5407",
+              "logo": "claude-mem.png",
+              "state": "Merged",
+              "kind": "Bug fix",
+              "about": "Claude-Mem gives Claude Code a memory that carries across sessions, with 114K GitHub stars."
+            },
+            {
+              "name": "VoiceStudio",
+              "href": "https://github.com/debpalash/VoiceStudio/pull/3827",
+              "logo": "voice-studio.png",
+              "state": "Merged",
+              "kind": "Bug fix",
+              "about": "VoiceStudio clones voices, dubs and transcribes on your own device, with 102K GitHub stars."
+            },
+            {
+              "name": "Hugging Face Hub",
+              "href": "https://github.com/huggingface/huggingface_hub/pull/5285",
+              "logo": "hf-hub.png",
+              "state": "Merged",
+              "kind": "Bug fix",
+              "about": "Hugging Face's Python client for the Hub's models and datasets, downloaded 233M times a month from PyPI."
+            },
+            {
+              "name": "DeepSeek Harness",
+              "href": "https://github.com/deepseek-ai/deepseek-harness/discussions/10604",
+              "logo": "deepseek-harness.png",
+              "state": "In progress",
+              "kind": "Bug report",
+              "about": "DeepSeek's agent harness, where every part of an agent runs as a plugin, downloaded 2.2M times a month from npm."
+            },
+            {
+              "name": "Ollama",
+              "href": "https://github.com/ollama/ollama/pull/19110",
+              "logo": "ollama.png",
+              "logoDark": "ollama-on-dark.png",
+              "state": "In progress",
+              "kind": "Bug fixes",
+              "about": "Ollama runs open models on your own machine or in the cloud; its Docker image has been pulled 197M times."
+            },
+            {
+              "name": "Ponytail",
+              "href": "https://github.com/DietrichGebert/ponytail/pull/1363",
+              "logo": "ponytail.png",
+              "state": "In progress",
+              "kind": "Bug fix",
+              "about": "With 186K GitHub stars, Ponytail steers coding agents toward only the code a task needs.",
+              "evidence": [
+                {
+                  "text": "issue #1362",
+                  "href": "https://github.com/DietrichGebert/ponytail/issues/1362"
+                }
+              ]
+            },
+            {
+              "name": "Codex",
+              "href": "https://github.com/openai/codex/issues/56057",
+              "logo": "codex.png",
+              "state": "In progress",
+              "kind": "Bug report",
+              "about": "OpenAI's coding agent for the terminal, downloaded 91M times a month from npm."
+            },
+            {
+              "name": "Matplotlib",
+              "href": "https://github.com/matplotlib/matplotlib/pull/32539",
+              "logo": "matplotlib.png",
+              "state": "In progress",
+              "kind": "Bug fix",
+              "about": "Matplotlib makes static, animated and interactive plots in Python, downloaded 159M times a month from PyPI."
+            },
+            {
+              "name": "Datasets",
+              "href": "https://github.com/huggingface/datasets/pulls?q=is%3Apr+author%3Amertkayacs",
+              "logo": "hf-datasets.png",
+              "state": "In progress",
+              "kind": "Bug fixes",
+              "about": "Hugging Face's library for loading and processing machine learning datasets, downloaded 67M times a month from PyPI."
+            },
+            {
+              "name": "Claude Agent SDK",
+              "href": "https://github.com/anthropics/claude-agent-sdk-python/pull/1427",
+              "logo": "claude-agent-sdk.png",
+              "state": "In progress",
+              "kind": "Bug fix",
+              "about": "Anthropic's Python SDK for building agents on Claude Code, downloaded 30M times a month from PyPI."
+            }
+          ]
         },
         {
-          "name": "Hermes Agent",
-          "href": "https://github.com/NousResearch/hermes-agent/pull/138650",
-          "logo": "hermes-agent.png",
-          "title": "Credited: a maintainer's merged pull request ships my plugin fixes and names me"
+          "label": "Widely used developer tools",
+          "items": [
+            {
+              "name": "God's Eye View",
+              "href": "https://github.com/bilawalsidhu/gods-eye-view/pull/1585",
+              "logo": "gods-eye-view.png",
+              "state": "Merged",
+              "kind": "Bug fix",
+              "about": "God's Eye View puts live public data on an explorable globe, with 63K GitHub stars."
+            },
+            {
+              "name": "CleanYourTV",
+              "href": "https://github.com/Gathin23/cleanyourtv/pull/3398",
+              "logo": "cleanyourtv.png",
+              "state": "Merged",
+              "kind": "Bug fix",
+              "about": "CleanYourTV disables unwanted software on Android TV and Google TV over Wi-Fi, starred 53K times on GitHub."
+            },
+            {
+              "name": "Claude Code Router",
+              "href": "https://github.com/musistudio/claude-code-router/pull/1871",
+              "logo": "claude-code-router.png",
+              "state": "Merged",
+              "kind": "Bug fix",
+              "about": "Claude Code Router sends Claude Code requests to the model provider you choose, downloaded 158K times a month from npm."
+            },
+            {
+              "name": "Laya",
+              "href": "https://github.com/NandhaKishorM/laya/pull/1466",
+              "logo": "laya.png",
+              "state": "Merged",
+              "kind": "Bug fix",
+              "about": "Laya turns text into choices, scores and yes-or-no answers, downloaded 272K times a month from PyPI."
+            },
+            {
+              "name": "Claude HUD",
+              "href": "https://github.com/jarrodwatts/claude-hud/pull/802",
+              "logo": "claude-hud.png",
+              "state": "Merged",
+              "kind": "Bug fix",
+              "about": "Claude HUD shows Claude Code's context, tools, agents and tasks at a glance, with 29K GitHub stars."
+            },
+            {
+              "name": "Filee",
+              "href": "https://github.com/KnifeLemon/Filee/pull/1208",
+              "logo": "filee.png",
+              "state": "Merged",
+              "kind": "Bug fix",
+              "about": "With 23K GitHub stars, Filee converts files between hundreds of formats offline by drag and drop."
+            },
+            {
+              "name": "Moli",
+              "href": "https://github.com/lexmount/moli/pull/2436",
+              "logo": "moli.png",
+              "state": "Merged",
+              "kind": "Bug fix",
+              "about": "Moli lets AI agents fetch pages and run browser tasks, with 23K GitHub stars."
+            },
+            {
+              "name": "ccstatusline",
+              "href": "https://github.com/sirmalloc/ccstatusline/pull/695",
+              "logo": "ccstatusline.png",
+              "state": "Merged",
+              "kind": "New feature",
+              "about": "ccstatusline puts Claude Code metrics in a customizable status line, downloaded 198K times a month from npm.",
+              "evidence": [
+                {
+                  "text": "v2.2.33",
+                  "href": "https://github.com/sirmalloc/ccstatusline/releases/tag/v2.2.33"
+                }
+              ]
+            },
+            {
+              "name": "caire",
+              "href": "https://github.com/esimov/caire/pull/114",
+              "logo": "caire.png",
+              "state": "Merged",
+              "kind": "Bug fixes",
+              "about": "caire resizes images by content-aware seam carving, with 11K GitHub stars.",
+              "evidence": [
+                {
+                  "text": "#115",
+                  "href": "https://github.com/esimov/caire/pull/115"
+                },
+                {
+                  "text": "#116",
+                  "href": "https://github.com/esimov/caire/pull/116"
+                },
+                {
+                  "text": "#119",
+                  "href": "https://github.com/esimov/caire/pull/119"
+                }
+              ]
+            },
+            {
+              "name": "HyperFrames",
+              "href": "https://github.com/heygen-com/hyperframes/pull/7253",
+              "logo": "hyperframes.png",
+              "state": "In progress",
+              "kind": "Bug fix",
+              "about": "HeyGen's HyperFrames renders HTML, CSS and animations to MP4 video, downloaded 4.2M times a month from npm."
+            },
+            {
+              "name": "PhotoCraft",
+              "href": "https://github.com/storytold/photocraft/pull/11567",
+              "logo": "photocraft.png",
+              "state": "In progress",
+              "kind": "Bug fix",
+              "about": "PhotoCraft is a native Rust editor for layered images and PSD files, with 77K GitHub stars."
+            },
+            {
+              "name": "colibrì",
+              "href": "https://github.com/JustVugg/colibri/pull/2609",
+              "logo": "colibri.png",
+              "state": "In progress",
+              "kind": "Bug fix",
+              "about": "colibrì runs large open mixture-of-experts models on hardware you already have, with 48K GitHub stars."
+            },
+            {
+              "name": "SGLang",
+              "href": "https://github.com/sgl-project/sglang/pull/43377",
+              "logo": "sglang.png",
+              "state": "In progress",
+              "kind": "Bug fix",
+              "about": "SGLang is a serving framework for language, vision and diffusion models, downloaded 3.0M times a month from PyPI."
+            },
+            {
+              "name": "Qwen Code",
+              "href": "https://github.com/QwenLM/qwen-code/pull/15144",
+              "logo": "qwen-code.png",
+              "state": "In progress",
+              "kind": "Bug fix",
+              "about": "The Qwen team's open-source coding agent for terminals and editors, downloaded 363K times a month from npm."
+            },
+            {
+              "name": "PdfCraft",
+              "href": "https://github.com/storytold/pdfcraft/pull/6389",
+              "logo": "pdfcraft.png",
+              "state": "In progress",
+              "kind": "Bug fix",
+              "about": "PdfCraft reads, organizes, merges, splits and secures PDFs in a native app, with 20K GitHub stars."
+            },
+            {
+              "name": "LM Evaluation Harness",
+              "href": "https://github.com/EleutherAI/lm-evaluation-harness/pull/4346",
+              "logo": "lm-eval.png",
+              "state": "In progress",
+              "kind": "Bug fix",
+              "about": "EleutherAI's harness for testing language models across many evaluation tasks, downloaded 1.0M times a month from PyPI."
+            }
+          ]
         },
         {
-          "name": "Claude Code Router",
-          "href": "https://github.com/musistudio/claude-code-router/pull/1871",
-          "logo": "claude-code-router.png"
-        },
-        {
-          "name": "Claude HUD",
-          "href": "https://github.com/jarrodwatts/claude-hud/pull/802",
-          "logo": "claude-hud.png"
-        },
-        {
-          "name": "ccstatusline",
-          "href": "https://github.com/sirmalloc/ccstatusline/pull/695",
-          "logo": "ccstatusline.png"
-        },
-        {
-          "name": "claude-swap",
-          "href": "https://github.com/realiti4/claude-swap/pull/442",
-          "logo": "claude-swap.png"
-        },
-        {
-          "name": "ManimGX",
-          "href": "https://github.com/academa-labs/manimgx/pulls?q=is%3Apr+author%3Amertkayacs+is%3Amerged",
-          "logo": "manimgx.png"
+          "label": "Smaller projects",
+          "items": [
+            {
+              "name": "claude-swap",
+              "href": "https://github.com/realiti4/claude-swap/pull/442",
+              "logo": "claude-swap.png",
+              "state": "Merged",
+              "kind": "Bug fix",
+              "about": "claude-swap switches between Claude Code accounts and tracks their usage, downloaded 19K times a month from PyPI.",
+              "evidence": [
+                {
+                  "text": "v0.27.2",
+                  "href": "https://github.com/realiti4/claude-swap/releases/tag/v0.27.2"
+                }
+              ]
+            },
+            {
+              "name": "ManimGX",
+              "href": "https://github.com/academa-labs/manimgx/pulls?q=is%3Apr+author%3Amertkayacs+is%3Amerged",
+              "logo": "manimgx.png",
+              "state": "Merged",
+              "kind": "Bug fixes",
+              "about": "ManimGX renders 2D and 3D animations through Manim's Python API, with 2,564 GitHub stars."
+            },
+            {
+              "name": "ccswap",
+              "href": "https://github.com/errhythm/ccswap/commit/b659a4c79",
+              "logo": "claude-swap.png",
+              "state": "Credited",
+              "kind": "Bug fix",
+              "about": "ccswap switches Claude Code and Codex accounts and tracks usage, downloaded 979 times a month from PyPI."
+            },
+            {
+              "name": "Kimi Code",
+              "href": "https://github.com/MoonshotAI/kimi-code/issues/4324",
+              "logo": "kimi-code.png",
+              "state": "In progress",
+              "kind": "Bug report",
+              "about": "Moonshot AI's coding agent for the terminal, downloaded 291K times a month from npm."
+            }
+          ]
         }
       ],
-      "inProgress": [
+      "more": [
+        "The full list is on ",
         {
-          "name": "Ollama",
-          "href": "https://github.com/ollama/ollama/pulls?q=is%3Apr+author%3Amertkayacs",
-          "logo": "ollama.png",
-          "logoDark": "ollama-on-dark.png"
+          "link": "https://mertkayacs.com/open-source/",
+          "text": "mertkayacs.com/open-source",
+          "slot": "open-source-link"
         },
-        {
-          "name": "Hugging Face datasets",
-          "href": "https://github.com/huggingface/datasets/pulls?q=is%3Apr+author%3Amertkayacs",
-          "logo": "hf-datasets.png"
-        },
-        {
-          "name": "SGLang",
-          "href": "https://github.com/sgl-project/sglang/pull/43377",
-          "logo": "sglang.png"
-        },
-        {
-          "name": "Qwen Code",
-          "href": "https://github.com/QwenLM/qwen-code/pull/15144",
-          "logo": "qwen-code.png"
-        },
-        {
-          "name": "LM Evaluation Harness",
-          "href": "https://github.com/EleutherAI/lm-evaluation-harness/pull/4346",
-          "logo": "lm-eval.png"
-        },
-        {
-          "name": "Claude Agent SDK",
-          "href": "https://github.com/anthropics/claude-agent-sdk-python/pull/1427",
-          "logo": "claude-agent-sdk.png"
-        },
-        {
-          "name": "Codex",
-          "href": "https://github.com/openai/codex/issues/56057",
-          "logo": "codex.png"
-        },
-        {
-          "name": "DeepSeek Harness",
-          "href": "https://github.com/deepseek-ai/deepseek-harness/discussions/10604",
-          "logo": "deepseek-harness.png"
-        },
-        {
-          "name": "Kimi Code",
-          "href": "https://github.com/MoonshotAI/kimi-code/issues/4324",
-          "logo": "kimi-code.png"
-        }
-      ],
-      "more": "The full list is on [mertkayacs.com/open-source](https://mertkayacs.com/open-source/)."
+        "."
+      ]
     },
     "activity": {
+      "summary": "Contribution calendar and GitHub stats",
       "contrib": {
         "dark": "https://raw.githubusercontent.com/mertkayacs/mertkayacs/cards/contrib-dark.svg",
         "light": "https://raw.githubusercontent.com/mertkayacs/mertkayacs/cards/contrib-light.svg",
@@ -264,6 +676,8 @@
         }
       ]
     },
-    "elsewhere": "[mertkayacs.com](https://mertkayacs.com) | [eschatialabs.com](https://eschatialabs.com) | [Hugging Face](https://huggingface.co/mertkayacs) | [Kaggle](https://www.kaggle.com/mertilovski) | [LinkedIn](https://www.linkedin.com/in/mertkayacs) | [ORCID](https://orcid.org/0009-0006-7018-3027) | [X](https://x.com/mertkayaai)"
+    "views": {
+      "link": "https://mertkayacs.com/"
+    }
   }
 }
