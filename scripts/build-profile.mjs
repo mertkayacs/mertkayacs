@@ -226,7 +226,7 @@ ${details("Education and research", education)}
 
 ${details("Stack", `${stack}${also}`)}
 
-## Open source
+## Open source Contributions of mine
 
 ${groups}
 

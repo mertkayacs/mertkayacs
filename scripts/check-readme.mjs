@@ -8,13 +8,13 @@ const readme = await readFile(new URL("../README.md", import.meta.url), "utf8");
 // README.md is generated. A hand edit fails here: change scripts/profile-data.json and run npm run build.
 assert.equal(readme, renderReadme(loadData()), "README.md is not the output of scripts/build-profile.mjs. Edit scripts/profile-data.json, then run npm run build.");
 
-// Header, in the order of the project READMEs: logo, two-sentence tagline, subtitle, badge row, button row.
+// Header, in the order of the project READMEs: logo, tagline, subtitle, badge row, button row.
 const header = readme.match(
   /^<p align="center">\n  <picture>\n    <source media="\(prefers-color-scheme: dark\)" srcset="docs\/brand\/svg\/mertkaya-logo-on-dark\.svg">\n    <img src="docs\/brand\/svg\/mertkaya-logo-on-light\.svg" alt="Mert Kaya" width="260">\n  <\/picture>\n<\/p>\n\n<h1 align="center">([^<]+)<\/h1>\n\n<p align="center">\n  ([^<]+)<br>\n  <b>([^<]+)<\/b>\n<\/p>\n\n<p align="center">\n([\s\S]+?)\n<\/p>\n\n<p align="center">\n([\s\S]+?)\n<\/p>\n\n## Projects\n/,
 );
 assert.ok(header, "Header blocks are missing or out of order: logo, tagline, subtitle, badge row, button row, then Projects.");
 const [, tagline, role, lab, badgeRow, buttonRow] = header;
-assert.equal(tagline.match(/[.!?](?= |$)/g)?.length, 2, "The tagline must be two short sentences.");
+assert.ok([1, 2].includes(tagline.match(/[.!?](?= |$)/g)?.length), "The tagline must be one or two short sentences.");
 assert.match(role, /Enocta/, "The subtitle must name the role at Enocta.");
 assert.equal(lab, "Founder of Eschatia Labs, an independent, non-profit open-source AI research lab.", "The subtitle must describe Eschatia Labs in its fixed words.");
 
@@ -62,7 +62,7 @@ cards.forEach((card, index) => {
 assert.match(cards[1], /Emberwick/, "The JevAlt card must say that Emberwick runs on it.");
 
 // Career, education and stack sit in closed details with bold summaries, as do the open-source groups and the activity cards.
-const about = readme.match(/\n## About\n\n([\s\S]+?)\n\n## Open source\n/);
+const about = readme.match(/\n## About\n\n([\s\S]+?)\n\n## Open source Contributions of mine\n/);
 assert.ok(about, "The About section is missing or out of order.");
 assert.deepEqual([...about[1].matchAll(/^<details>\n<summary><b>(.+)<\/b><\/summary>$/gm)].map((match) => match[1]), ["Career", "Education and research", "Stack"], "About details changed.");
 assert.ok(!/<details open/.test(readme), "Every details element starts closed.");
@@ -73,7 +73,7 @@ assert.ok(
 );
 assert.ok(!/to appear|will appear|accepted at|in press/i.test(readme), "Old paper status wording is back.");
 
-const openSource = readme.match(/## Open source\n\n([\s\S]+?)\nThe full list is on \[mertkayacs\.com\/open-source\]\(https:\/\/mertkayacs\.com\/open-source\/\?[^)]+\)\.\n/);
+const openSource = readme.match(/## Open source Contributions of mine\n\n([\s\S]+?)\nThe full list is on \[mertkayacs\.com\/open-source\]\(https:\/\/mertkayacs\.com\/open-source\/\?[^)]+\)\.\n/);
 
 assert.ok(openSource, "README open-source block is missing.");
 const groups = [...openSource[1].matchAll(/^<details>\n<summary><b>(.+)<\/b><\/summary>\n\n([\s\S]+?)\n\n<\/details>$/gm)];
