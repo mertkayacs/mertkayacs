@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build-skill-tiles.mjs && node scripts/build-profile.mjs"
+    "build": "node scripts/build-skill-tiles.mjs && node scripts/build-profile.mjs",
+    "check": "node scripts/check-readme.mjs"
   },
   "devDependencies": {
     "simple-icons": "16.35.0"
