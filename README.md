@@ -127,7 +127,7 @@ Also: SQL, NLTK, Weaviate.
 
 </details>
 
-## Open source
+## Open source Contributions of mine
 
 <details>
 <summary><b>Used by millions</b></summary>
