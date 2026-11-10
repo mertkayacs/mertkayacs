@@ -333,12 +333,20 @@
             },
             {
               "name": "Hermes Agent",
-              "href": "https://github.com/NousResearch/hermes-agent/pull/145738",
+              "href": "https://github.com/NousResearch/hermes-agent/pull/151088",
               "logo": "hermes-agent.png",
               "state": "Merged",
-              "kind": "Bug fixes",
+              "kind": "Official plugin and bug fixes",
               "about": "Nous Research's open agent that learns from experience and remembers across sessions, with 261K GitHub stars.",
               "evidence": [
+                {
+                  "text": "Hermes Marketplace",
+                  "href": "https://hermes-agent.nousresearch.com/marketplace/postkitty"
+                },
+                {
+                  "text": "#145738",
+                  "href": "https://github.com/NousResearch/hermes-agent/pull/145738"
+                },
                 {
                   "text": "#138650 credit",
                   "href": "https://github.com/NousResearch/hermes-agent/pull/138650"
@@ -468,6 +476,14 @@
               "about": "CleanYourTV disables unwanted software on Android TV and Google TV over Wi-Fi, starred 53K times on GitHub."
             },
             {
+              "name": "colibrì",
+              "href": "https://github.com/JustVugg/colibri/pull/2609",
+              "logo": "colibri.png",
+              "state": "Merged",
+              "kind": "Bug fix",
+              "about": "colibrì runs large open mixture-of-experts models on hardware you already have, with 48K GitHub stars."
+            },
+            {
               "name": "Claude Code Router",
               "href": "https://github.com/musistudio/claude-code-router/pull/1871",
               "logo": "claude-code-router.png",
@@ -558,14 +574,6 @@
               "state": "In progress",
               "kind": "Bug fix",
               "about": "PhotoCraft is a native Rust editor for layered images and PSD files, with 77K GitHub stars."
-            },
-            {
-              "name": "colibrì",
-              "href": "https://github.com/JustVugg/colibri/pull/2609",
-              "logo": "colibri.png",
-              "state": "In progress",
-              "kind": "Bug fix",
-              "about": "colibrì runs large open mixture-of-experts models on hardware you already have, with 48K GitHub stars."
             },
             {
               "name": "SGLang",

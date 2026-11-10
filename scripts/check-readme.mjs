@@ -90,10 +90,10 @@ assert.deepEqual(
 
 const lines = openSource[1].split("\n").filter((line) => line.startsWith("- <a "));
 const expectedLabels = [
-  "Bug fixes", "Bug fixes", "Bug fix and tests", "Bug fix", "Bug fix", "Bug fix",
+  "Bug fixes", "Official plugin and bug fixes", "Bug fix and tests", "Bug fix", "Bug fix", "Bug fix",
   "Bug report", "Bug fixes", "Bug fix", "Bug report", "Bug fix", "Bug fixes", "Bug fix",
-  "Bug fix", "Bug fix", "Bug fix", "Bug fix", "Bug fix", "Bug fix", "Bug fix", "New feature",
-  "Bug fixes", "Bug fix", "Bug fix", "Bug fix", "Bug fix", "Bug fix", "Bug fix", "Bug fix",
+  "Bug fix", "Bug fix", "Bug fix", "Bug fix", "Bug fix", "Bug fix", "Bug fix", "Bug fix",
+  "New feature", "Bug fixes", "Bug fix", "Bug fix", "Bug fix", "Bug fix", "Bug fix", "Bug fix",
   "Bug fix", "Bug fixes", "Bug fix", "Bug report",
 ];
 
@@ -127,12 +127,12 @@ const rows = lines.map((line, index) => {
 
 const hash = (values) => createHash("sha256").update(JSON.stringify(values)).digest("hex");
 const contracts = {
-  name: "be91de9367c507708662d00667a802a1c65b24482d26f23769b688bf056c6123",
-  href: "1a1e90c775d083e176667e6033d4ef8e95edd32f576002dbcc6884f0158d9c38",
-  logo: "ac84ce42c68a1c10d9202c1a6c32d89aa601166fa2e31af2b7393714c7698872",
-  state: "73d822560672fae4e56429535f1be304ec5cac7e53a79ea08aae4a927af0fafd",
-  about: "c9a5a42725171d236594348b7d316a15871dfbd34178ef44a9271275a4c9468d",
-  evidence: "3318afac354a9c27ce368dc4b9cc14f443c4fe7c0318ad26cc87b921d54f4ec5",
+  name: "7ad20119c6bc52ce350c8a1d1209f1008b1cf0de66ec122753bcdd0db50086d4",
+  href: "a5cb28b2d755c64f4ae5a88b7694c2bcbdde945f197d9a5d3cdd88711db4fd14",
+  logo: "212c0d262fe1a22c1988520465d938110e725bd7b9e3b875297872993d944901",
+  state: "17a938fdb3aac454cb17d4792852a95fd0e58db61866020b012bb07270630a82",
+  about: "ff6dea75cfa748819c07531708bc2c56e36f24689cb0e1793424493f532a757c",
+  evidence: "5316593fc6009c0872b1eb2b95f48abb491d8c97a32a579c8d4291fe6d5e3dcf",
 };
 
 for (const [field, expected] of Object.entries(contracts)) {
