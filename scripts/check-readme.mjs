@@ -132,7 +132,7 @@ const contracts = {
   logo: "212c0d262fe1a22c1988520465d938110e725bd7b9e3b875297872993d944901",
   state: "17a938fdb3aac454cb17d4792852a95fd0e58db61866020b012bb07270630a82",
   about: "ff6dea75cfa748819c07531708bc2c56e36f24689cb0e1793424493f532a757c",
-  evidence: "5316593fc6009c0872b1eb2b95f48abb491d8c97a32a579c8d4291fe6d5e3dcf",
+  evidence: "b3f7659765c894cbc74bddf324466cea7fd1744b051de748a9b6236cfe3bbb0f",
 };
 
 for (const [field, expected] of Object.entries(contracts)) {
