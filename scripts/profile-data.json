@@ -330,8 +330,8 @@
                   "href": "https://github.com/morluto/rea/releases/tag/rea-agents-6.8.0"
                 },
                 {
-                  "text": "d54f5b07b",
-                  "href": "https://github.com/morluto/rea/commit/d54f5b07b"
+                  "text": "#6194 credit",
+                  "href": "https://github.com/morluto/rea/pull/6194#issuecomment-6428452161"
                 }
               ]
             },
@@ -348,12 +348,12 @@
                   "href": "https://hermes-agent.nousresearch.com/marketplace/postkitty"
                 },
                 {
-                  "text": "#145738",
-                  "href": "https://github.com/NousResearch/hermes-agent/pull/145738"
+                  "text": "#153554",
+                  "href": "https://github.com/NousResearch/hermes-agent/pull/153554"
                 },
                 {
-                  "text": "#138650 credit",
-                  "href": "https://github.com/NousResearch/hermes-agent/pull/138650"
+                  "text": "#145738",
+                  "href": "https://github.com/NousResearch/hermes-agent/pull/145738"
                 }
               ]
             },
@@ -601,7 +601,13 @@
               "logo": "pdfcraft.png",
               "state": "In progress",
               "kind": "Bug fix",
-              "about": "PdfCraft reads, organizes, merges, splits and secures PDFs in a native app, with 20K GitHub stars."
+              "about": "PdfCraft reads, organizes, merges, splits and secures PDFs in a native app, with 20K GitHub stars.",
+              "evidence": [
+                {
+                  "text": "craft-libs#1600",
+                  "href": "https://github.com/storytold/craft-libs/pull/1600"
+                }
+              ]
             },
             {
               "name": "LM Evaluation Harness",
