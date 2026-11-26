@@ -468,6 +468,14 @@
           "label": "Widely used developer tools",
           "items": [
             {
+              "name": "HyperFrames",
+              "href": "https://github.com/heygen-com/hyperframes/pull/7253",
+              "logo": "hyperframes.png",
+              "state": "Merged",
+              "kind": "Bug fix",
+              "about": "HeyGen's HyperFrames renders HTML, CSS and animations to MP4 video, downloaded 4.2M times a month from npm."
+            },
+            {
               "name": "God's Eye View",
               "href": "https://github.com/bilawalsidhu/gods-eye-view/pull/1585",
               "logo": "gods-eye-view.png",
@@ -566,14 +574,6 @@
                   "href": "https://github.com/esimov/caire/pull/119"
                 }
               ]
-            },
-            {
-              "name": "HyperFrames",
-              "href": "https://github.com/heygen-com/hyperframes/pull/7253",
-              "logo": "hyperframes.png",
-              "state": "In progress",
-              "kind": "Bug fix",
-              "about": "HeyGen's HyperFrames renders HTML, CSS and animations to MP4 video, downloaded 4.2M times a month from npm."
             },
             {
               "name": "PhotoCraft",

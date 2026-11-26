@@ -93,7 +93,7 @@ const expectedLabels = [
   "Bug fixes", "Official plugin and bug fixes", "Bug fix and tests", "Bug fix", "Bug fix", "Bug fix",
   "Bug report", "Bug fixes", "Bug fix", "Bug report", "Bug fix", "Bug fixes", "Bug fix",
   "Bug fix", "Bug fix", "Bug fix", "Bug fix", "Bug fix", "Bug fix", "Bug fix", "Bug fix",
-  "New feature", "Bug fixes", "Bug fix", "Bug fix", "Bug fix", "Bug fix", "Bug fix", "Bug fix",
+  "Bug fix", "New feature", "Bug fixes", "Bug fix", "Bug fix", "Bug fix", "Bug fix", "Bug fix",
   "Bug fix", "Bug fixes", "Bug fix", "Bug report",
 ];
 
@@ -127,12 +127,12 @@ const rows = lines.map((line, index) => {
 
 const hash = (values) => createHash("sha256").update(JSON.stringify(values)).digest("hex");
 const contracts = {
-  name: "7ad20119c6bc52ce350c8a1d1209f1008b1cf0de66ec122753bcdd0db50086d4",
-  href: "a5cb28b2d755c64f4ae5a88b7694c2bcbdde945f197d9a5d3cdd88711db4fd14",
-  logo: "212c0d262fe1a22c1988520465d938110e725bd7b9e3b875297872993d944901",
-  state: "17a938fdb3aac454cb17d4792852a95fd0e58db61866020b012bb07270630a82",
-  about: "ff6dea75cfa748819c07531708bc2c56e36f24689cb0e1793424493f532a757c",
-  evidence: "2559edafbcfbf856660583e1d6a26232993bfea5a5bad54d9da8a5ff41f5232c",
+  name: "cde7b7edbd114528e621a752c2d8ecff7fd09b5e5305fc3866b27517694a69fe",
+  href: "ed325d60697fc9be3b0f343d288d56de474e29af6c0f638da90f20c3a95c3038",
+  logo: "9fc1113e2e37183666e9470b085ff1c34f401fe7699b114a65daee9195cf0e34",
+  state: "f16f85dbabf87f276359cbdbb1b924ec62a9c010068ed4bdb0cfb02d0ca5b8e9",
+  about: "2eba8ba392ffb5e08027814facf63bc1dca37371fd25576002bcab337e6eb99c",
+  evidence: "d291bd3b423f02a2e9399c0b351e4fc81dd91e5541887efabb39772c567e8ea0",
 };
 
 for (const [field, expected] of Object.entries(contracts)) {
